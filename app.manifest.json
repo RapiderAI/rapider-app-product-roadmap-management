@@ -1,0 +1,5059 @@
+{
+  "name": "Rapider Product Roadmap Management",
+  "key": "product-roadmap-management",
+  "domainKey": "DEV",
+  "appSuite": {
+    "key": "DEV",
+    "title": "Rapider Developer Suite"
+  },
+  "type": "App",
+  "description": "Product Roadmap Management enterprise microapplication in the Rapider Developer Suite.",
+  "isPublic": true,
+  "tags": [
+    "dev",
+    "product-roadmap-management",
+    "top-200"
+  ],
+  "iconUrl": "fas fa-code",
+  "icon": "fas fa-code",
+  "route": "product-roadmap-management",
+  "rating": 5,
+  "reviewCount": 0,
+  "status": "app-metadata-completed",
+  "coverPage": "<!-- Rapider Official App SOW & Specification | App #108: Product Roadmap Management (product-roadmap-management) | Domain: DEV -->\n\n# #108 Product Roadmap Management (`product-roadmap-management`) — Scope of Work (SOW)\n\n- **App Number & Name:** `#108 Product Roadmap Management`\n- **Proposed App Key:** `product-roadmap-management`\n- **Domain / Suite & Model Prefix:** `DEV` (`Dev*`) — Category `11. Software Development & DevOps`\n- **Representative Benchmark (`P1`):** `Aha!` (`Aha! Roadmaps` & `Aha! Ideas`)\n- **Combined Feature Catalog:** [../combined-features/108-product-roadmap-management-features.md](../combined-features/108-product-roadmap-management-features.md)\n\n---\n\n## 1. Executive Outcome & Target Audience\n\n**Product Roadmap Management (`product-roadmap-management`)** bridges customer discovery, strategic prioritization, and engineering execution inside the Rapider `DEV` suite—integrating seamlessly upstream of Rapider's built `planning` / `apm` apps (`ApmEpic`, `ApmIssue`, `ApmProjectPortfolio`). Instead of maintaining stale slide decks disconnected from engineering sprint boards and scattered customer requests in CRM/Support notes, product managers consolidate voice-of-the-customer evidence, quantify influenced ARR, rank initiatives objectively using RICE/WSJF `Decimal128` scorecards, promote winning roadmap items in one click into canonical `ApmEpic` delivery backlogs, and close the loop with customers through tailored portals and release changelogs.\n\n- **SME & Startup Fast-Path:** A founder or PM captures feature ideas in `#/ideas`, drags validated `DevRoadmapItem` cards across `NOW / NEXT / LATER` on `<rapider-kanban>` (`#/roadmap`), applies the built-in `RICE` scorecard, and clicks **Promote to Planning Epic**—creating a linked `ApmEpic` whose live engineering completion percentage (`% Done`) automatically syncs back onto the roadmap card.\n- **Enterprise Progressive Disclosure:** Multi-product portfolios unlock `DevStrategicTheme` investment mix targets tied to `HrGoal` / `ApmProjectPortfolio`, `CrmOpportunity` influenced-ARR rollups, multi-rater Priority Poker calibration, stage-gate `COMMITTED` approvals via shared Rapider Home `WorkItem`s, audience-segmented `DevRoadmapPortal` views (`INTERNAL_STAKEHOLDERS` vs. `PUBLIC`), and cross-functional `DevProductLaunch` GTM readiness checklists spanning `#105` flags, `#106` QA gates, `MKT` campaigns, and `SUP` knowledge articles.\n- **Measurable Business & Engineering Outcomes:**\n  1. Ensure **85%+ of committed engineering capacity** (`ApmEpic`) traces directly to quantified `DevStrategicTheme` objectives and customer-validated `DevFeedbackEvidence`.\n  2. Eliminate **100% manual roadmap status deck updates** via automated bi-directional `deliveryProgressPercent` sync from `ApmEpic` / `ApmIssue` execution and `#105` feature-flag rollouts.\n  3. Increase B2B renewal & expansion win rates by surfacing exact `Decimal128` influenced ARR (e.g., \\$250,000.00 blocked pipeline) during quarterly prioritization.\n- **Top 6 Global Benchmarks Synthesized (`P1`–`P6`):** `Aha! Roadmaps & Ideas` (`P1` — Representative Product), `Productboard` (`P2`), `Airfocus` (`P3`), `Atlassian Jira Product Discovery` (`P4`), `ServiceNow Strategic Portfolio Management` (`P5`), and `Monday.com Dev & Product Roadmaps` (`P6`).\n\n---\n\n## 2. In-Scope, Out-of-Scope & Suite Ownership Boundaries\n\n### In-Scope\n- Capturing, deduplicating, and triaging `DevProductIdea` requests and `DevFeedbackEvidence` records linked to `CrmAccount`, `CrmOpportunity`, and `SupTicket` (`PRM-001`–`PRM-004`, `PRM-023`).\n- Defining `DevStrategicTheme` bets, configurable `DevScoringModel` frameworks (`RICE`, `WSJF`, custom weighted `Decimal128` formulas), Value-vs-Effort matrices, and Priority Poker calibration (`PRM-005`–`PRM-009`).\n- Managing `DevRoadmapItem` horizons (`NOW`, `NEXT`, `LATER`, `ICEBOX`, `SHIPPED`), cross-item dependencies, Home `WorkItem` commitment approvals, and 1-click promotion + bi-directional progress sync with canonical `ApmEpic` & `ApmIssue` (`PRM-010`–`PRM-014`, `PRM-019`).\n- Audience-tailored `DevRoadmapPortal` boards (with sanitized external copy and CAB voting budgets), `DevProductLaunch` cross-functional GTM readiness, customer changelogs, Notebook PRD links, and grounded AI discovery/release-note assistants (`PRM-015`–`PRM-018`, `PRM-020`–`PRM-022`, `PRM-024`–`PRM-028`).\n\n### Out-of-Scope (Strict Zero-Duplication Boundary with Built `APM` Suite)\n- **Sprint Planning, Story Points, Subtasks & Engineering Kanban:** Strictly owned by Rapider `APM` (`planning` / `apm`: `ApmProject`, `ApmEpic`, `ApmSprint`, `ApmIssue`). `#108` NEVER creates shadow `Sprint`, `UserStory`, or `Bug` tables.\n- **Resource Timesheets, Utilization & Project Capex/Opex Ledgers:** Owned by `APM` (`resources`: `ApmResourceProfile`, `time`: `ApmTimesheet`, `financials`: `ApmProjectFinancialPlan`).\n- **CRM Pipeline Management & Support SLA Ticketing:** Owned by `CRM` (`CrmAccount`, `CrmOpportunity`) and `SUP` (`SupTicket",
+  "scopeOfWork": "<!-- Rapider Official App SOW & Specification | App #108: Product Roadmap Management (product-roadmap-management) | Domain: DEV -->\n\n# #108 Product Roadmap Management (`product-roadmap-management`) — Scope of Work (SOW)\n\n- **App Number & Name:** `#108 Product Roadmap Management`\n- **Proposed App Key:** `product-roadmap-management`\n- **Domain / Suite & Model Prefix:** `DEV` (`Dev*`) — Category `11. Software Development & DevOps`\n- **Representative Benchmark (`P1`):** `Aha!` (`Aha! Roadmaps` & `Aha! Ideas`)\n- **Combined Feature Catalog:** [../combined-features/108-product-roadmap-management-features.md](../combined-features/108-product-roadmap-management-features.md)\n\n---\n\n## 1. Executive Outcome & Target Audience\n\n**Product Roadmap Management (`product-roadmap-management`)** bridges customer discovery, strategic prioritization, and engineering execution inside the Rapider `DEV` suite—integrating seamlessly upstream of Rapider's built `planning` / `apm` apps (`ApmEpic`, `ApmIssue`, `ApmProjectPortfolio`). Instead of maintaining stale slide decks disconnected from engineering sprint boards and scattered customer requests in CRM/Support notes, product managers consolidate voice-of-the-customer evidence, quantify influenced ARR, rank initiatives objectively using RICE/WSJF `Decimal128` scorecards, promote winning roadmap items in one click into canonical `ApmEpic` delivery backlogs, and close the loop with customers through tailored portals and release changelogs.\n\n- **SME & Startup Fast-Path:** A founder or PM captures feature ideas in `#/ideas`, drags validated `DevRoadmapItem` cards across `NOW / NEXT / LATER` on `<rapider-kanban>` (`#/roadmap`), applies the built-in `RICE` scorecard, and clicks **Promote to Planning Epic**—creating a linked `ApmEpic` whose live engineering completion percentage (`% Done`) automatically syncs back onto the roadmap card.\n- **Enterprise Progressive Disclosure:** Multi-product portfolios unlock `DevStrategicTheme` investment mix targets tied to `HrGoal` / `ApmProjectPortfolio`, `CrmOpportunity` influenced-ARR rollups, multi-rater Priority Poker calibration, stage-gate `COMMITTED` approvals via shared Rapider Home `WorkItem`s, audience-segmented `DevRoadmapPortal` views (`INTERNAL_STAKEHOLDERS` vs. `PUBLIC`), and cross-functional `DevProductLaunch` GTM readiness checklists spanning `#105` flags, `#106` QA gates, `MKT` campaigns, and `SUP` knowledge articles.\n- **Measurable Business & Engineering Outcomes:**\n  1. Ensure **85%+ of committed engineering capacity** (`ApmEpic`) traces directly to quantified `DevStrategicTheme` objectives and customer-validated `DevFeedbackEvidence`.\n  2. Eliminate **100% manual roadmap status deck updates** via automated bi-directional `deliveryProgressPercent` sync from `ApmEpic` / `ApmIssue` execution and `#105` feature-flag rollouts.\n  3. Increase B2B renewal & expansion win rates by surfacing exact `Decimal128` influenced ARR (e.g., \\$250,000.00 blocked pipeline) during quarterly prioritization.\n- **Top 6 Global Benchmarks Synthesized (`P1`–`P6`):** `Aha! Roadmaps & Ideas` (`P1` — Representative Product), `Productboard` (`P2`), `Airfocus` (`P3`), `Atlassian Jira Product Discovery` (`P4`), `ServiceNow Strategic Portfolio Management` (`P5`), and `Monday.com Dev & Product Roadmaps` (`P6`).\n\n---\n\n## 2. In-Scope, Out-of-Scope & Suite Ownership Boundaries\n\n### In-Scope\n- Capturing, deduplicating, and triaging `DevProductIdea` requests and `DevFeedbackEvidence` records linked to `CrmAccount`, `CrmOpportunity`, and `SupTicket` (`PRM-001`–`PRM-004`, `PRM-023`).\n- Defining `DevStrategicTheme` bets, configurable `DevScoringModel` frameworks (`RICE`, `WSJF`, custom weighted `Decimal128` formulas), Value-vs-Effort matrices, and Priority Poker calibration (`PRM-005`–`PRM-009`).\n- Managing `DevRoadmapItem` horizons (`NOW`, `NEXT`, `LATER`, `ICEBOX`, `SHIPPED`), cross-item dependencies, Home `WorkItem` commitment approvals, and 1-click promotion + bi-directional progress sync with canonical `ApmEpic` & `ApmIssue` (`PRM-010`–`PRM-014`, `PRM-019`).\n- Audience-tailored `DevRoadmapPortal` boards (with sanitized external copy and CAB voting budgets), `DevProductLaunch` cross-functional GTM readiness, customer changelogs, Notebook PRD links, and grounded AI discovery/release-note assistants (`PRM-015`–`PRM-018`, `PRM-020`–`PRM-022`, `PRM-024`–`PRM-028`).\n\n### Out-of-Scope (Strict Zero-Duplication Boundary with Built `APM` Suite)\n- **Sprint Planning, Story Points, Subtasks & Engineering Kanban:** Strictly owned by Rapider `APM` (`planning` / `apm`: `ApmProject`, `ApmEpic`, `ApmSprint`, `ApmIssue`). `#108` NEVER creates shadow `Sprint`, `UserStory`, or `Bug` tables.\n- **Resource Timesheets, Utilization & Project Capex/Opex Ledgers:** Owned by `APM` (`resources`: `ApmResourceProfile`, `time`: `ApmTimesheet`, `financials`: `ApmProjectFinancialPlan`).\n- **CRM Pipeline Management & Support SLA Ticketing:** Owned by `CRM` (`CrmAccount`, `CrmOpportunity`) and `SUP` (`SupTicket`).\n- **Standalone Rich-Text Document Storage:** PRDs and opportunity briefs reuse canonical Rapider Platform Notebooks.\n\n### Cross-Suite Ownership & Integration Contract\n\n| Domain / App | Owns (Canonical System of Record) | Integration Contract with `#108` (`product-roadmap-management`) |\n| :--- | :--- | :--- |\n| **`#108` (`product-roadmap-management`)** | `DevStrategicTheme`, `DevProductIdea`, `DevFeedbackEvidence`, `DevScoringModel`, `DevRoadmapItem`, `DevProductLaunch`, `DevRoadmapPortal` | Governs upstream product discovery, RICE prioritization, horizons, portals, and GTM launches; emits `dev.roadmap.item_committed.v1` and `dev.roadmap.launch_published.v1`. |\n| **`APM` (`planning`, `apm`, `resources`, `financials`)** | `ApmProject`, `ApmEpic`, `ApmSprint`, `ApmIssue`, `ApmProjectPortfolio`, `ApmResourceProfile`, `ApmProjectFinancialPlan` | Promoting a `DevRoadmapItem` creates/links `linkedApmEpicId` (`ApmEpic`) and optional `linkedApmIssueIds` (`ApmIssue[]`); `#108` consumes `apm.epic.progress_updated.v1` to update `deliveryProgressPercent`. |\n| **`CRM` (`crm`)** | `CrmAccount`, `CrmContact`, `CrmOpportunity` | `DevFeedbackEvidence` references `crmAccountId` and `crmOpportunityId` to roll up exact `Decimal128` `influencedArrAmount` on ideas and roadmap items. |\n| **`SUP` (`support`)** | `SupCustomer`, `SupTicket`, `SupKnowledgeArticle` | `DevFeedbackEvidence` links `supTicketId` escalations; `DevProductLaunch` links `SupKnowledgeArticle` readiness; shipping an idea notifies linked `SupTicket` watchers. |\n| **`#105` & `#106` & `#097`** | `DevFeatureFlag` (`#105`), `DevQualityGate` (`#106`), Analytics (`#097`) | `DevRoadmapItem` / `DevProductLaunch` displays live `#105` rollout %, `#106` release gate pass status, and `#097` post-launch adoption metric links. |\n| **`HR` & `MKT` & Platform Core** | `HrGoal` (`performance`), `MktCampaign` (`campaigns`), Notebooks, Home `WorkItem`s, `projectChannelMessage` | `DevStrategicTheme` aligns to `HrGoal`; `DevProductLaunch` links `MktCampaign`; PRDs link Notebook pages; `COMMITTED` & `PUBLIC` approvals use Home `WorkItem`s; AI runs on `projectChannelMessage`. |\n\n---\n\n## 3. Primary Web Pages & Sidebar Navigation Architecture (12 Pages)\n\nEvery visible sidebar section strictly enforces the **Minimum 3 Items Rule** (`Strategy & Roadmaps` = 3 items, `Discovery & Prioritization` = 3 items, `Launches & Portals` = 3 items; detail and drawer routes set `displayOnMenu: false`).\n\n| # | Route | Page Title | Sidebar Section | Menu Visible | Key Components & UX Standards |\n| :--- | :--- | :--- | :--- | :--- | :--- |\n| 1 | `dashboard` | Product Strategy Overview | `Strategy & Roadmaps` | `true` (Order 1) | KPI cards (`countSWR`/`findSWR`) for Committed `NOW` Items, Synced `ApmEpic` Completion %, Untriaged Ideas, Influenced ARR, and Upcoming Launches; theme allocation donut. |\n| 2 | `roadmap` | Now / Next / Later Roadmap | `Strategy & Roadmaps` | `true` (Order 2) | `<rapider-kanban>` Horizon Board (`NOW`, `NEXT`, `LATER`, `SHIPPED`) + Quarterly Swimlane toggle; `#activeFilterTagsBar` with `Clear all`; live `ApmEpic` `%` & `#105` flag badges; clickable title (`roadmap-item-detail`). |\n| 3 | `themes` | Strategic Themes & Mix | `Strategy & Roadmaps` | `true` (Order 3) | `DevStrategicTheme` list comparing target vs. actual `Decimal128` investment mix %, linked `HrGoal` / `ApmProjectPortfolio`, and child roadmap count. |\n| 4 | `ideas` | Customer Ideas & Evidence | `Discovery & Prioritization` | `true` (Order 4) | Dual Table + `<rapider-kanban>` Idea Triage (`NEW`, `UNDER_REVIEW`, `PLANNED`, `SHIPPED`, `DECLINED`) showing vote count, `Decimal128` influenced ARR, `CrmAccount`/`SupTicket` badges, and clickable idea title (`idea-detail`). |\n| 5 | `prioritization` | RICE & Weighted Scorecards | `Discovery & Prioritization` | `true` (Order 5) | Interactive `Decimal128` scoring grid (`Reach`, `Impact`, `Confidence`, `Effort` -> `priorityScore`) + Value-vs-Effort 2x2 quadrant view and **Promote to `ApmEpic`** action. |\n| 6 | `scoring-models` | Scoring Models & Criteria | `Discovery & Prioritization` | `true` (Order 6) | `DevScoringModel` governance table (`RICE`, `WSJF`, Custom Weighted) with criterion weight validation (`sum == 100.00%`), `Edit` (icon + text) and `Delete` (icon-only). |\n| 7 | `launches` | Product Launches & GTM | `Launches & Portals` | `true` (Order 7) | `DevProductLaunch` milestone tracker with cross-functional readiness pills (`ApmEpic`, `#106` QA, `#105` Flag, `MktCampaign`, `SupKnowledgeArticle`) and target launch dates. |\n| 8 | `portals` | Stakeholder & Customer Portals | `Launches & Portals` | `true` (Order 8) | `DevRoadmapPortal` configuration (`INTERNAL_STAKEHOLDERS`, `DESIGN_PARTNERS`, `PUBLIC`), audience visibility filters, CAB voting point budgets, and safe external copy preview. |\n| 9 | `changelog` | Published Release Notes | `Launches & Portals` | `true` (Order 9) | Chronological shipped changelog feed linking `DevProductLaunch` notes to fulfilled `DevProductIdea` items with Save-to-Notebook & portal publish controls. |\n| 10 | `roadmap-item-detail` | Roadmap Initiative & Delivery Sync | *(Hidden)* | `false` | `Decimal128` scorecard breakdown, linked `ApmEpic` & `ApmIssue` live delivery progress table, dependencies (`BLOCKS`/`DEPENDS_ON`), PRD Notebook link, `DevFeedbackEvidence` list, and AI Copilot (`projectChannelMessage`). |\n| 11 | `idea-detail` | Idea Evidence & ARR Rollup | *(Hidden)* | `false` | Customer feedback quotes, `CrmOpportunity` ARR & `SupTicket` links, duplicate merge selector, voter list, and **Promote to Roadmap Initiative** button. |\n| 12 | `roadmap-item-drawer` | Create / Edit Roadmap Item | *(Hidden)* | `false` | Sliding form drawer for `DevRoadmapItem` creation/editing (theme, horizon, RICE inputs, sanitized portal summary, `ApmEpic` link); enforces `try/catch/finally`, SWR invalidation, and auto-close. |\n\n**Mandatory Rapider UI Compliance across all 12 Pages:**\n- Initial data loads exclusively invoke `window.rapiderApi.findSWR` and `countSWR` with zero redundant `isDeleted` filter clauses; local in-memory arrays filter `item.isDeleted !== true` and update optimistically on horizon move, score edit, or delete.\n- Tables never render a standalone \"View\" button in `Actions`; primary identifiers (`itemCode`/`title`, `ideaCode`/`title`, `themeName`, `launchName`) navigate to detail views; `Edit` uses icon + text and `Delete` uses icon-only with `aria-label=\"Delete\"`.\n- Primary and destructive confirmation buttons enforce `#ffffff !important` text contrast; native `alert`/`confirm`/`prompt` dialogs are strictly banned.\n\n---\n\n## 4. Canonical Data Models (`Dev*` — 7 Models)\n\nAll models omit `projectId`, use backend-generated UUIDs (`00000000-xxxx-xxxx-xxxx-xxxxxxxxxxxx` in deterministic fixtures), enforce optimistic `version` checks, and store exact financial/scoring values as `Decimal128`.\n\n| Model Name | Key Fields & Types | Relationships & External Refs | Invariants & Lifecycle |\n| :--- | :--- | :--- | :--- |\n| **`DevStrategicTheme`** | `id` (UUID), `code` (String, e.g., `THM-01`), `name` (String), `description` (String), `colorHex` (String), `targetAllocationPercent` (`Decimal128`), `fiscalPeriod` (String, e.g., `FY2026`), `status` (`ACTIVE` \\| `ARCHIVED`), `version` (Integer) | Optional `linkedHrGoalId` (`HrGoal`), `linkedPortfolioId` (`ApmProjectPortfolio`), `ownerUserId` (Platform Identity) | `code` unique per workspace; active themes in the same `fiscalPeriod` validate target allocation percentages in `Decimal128` (`0.00`–`100.00`). |\n| **`DevProductIdea`** | `id` (UUID), `ideaCode` (String, e.g., `IDEA-304`), `title` (String), `problemStatement` (String), `publicSanitizedSummary` (String?), `portalVisibility` (`PRIVATE` \\| `PORTAL_VISIBLE`), `voteCount` (Integer), `evidenceCount` (Integer), `influencedArrAmount` (`Decimal128`), `currencyCode` (String), `status` (`NEW` \\| `UNDER_REVIEW` \\| `PLANNED` \\| `IN_DELIVERY` \\| `SHIPPED` \\| `DECLINED`), `mergedIntoIdeaId` (UUID?), `version` (Integer) | Refs `submittedByUserId` / `crmContactId` (`CrmContact`), `promotedRoadmapItemId` (`DevRoadmapItem`), `threadChannelId` (`projectChannelMessage`) | Merging `Idea B` into `Idea A` sets `mergedIntoIdeaId`, transfers unique voters & `DevFeedbackEvidence` without double-counting duplicate `CrmOpportunity` ARR (`Decimal128`). |\n| **`DevFeedbackEvidence`** | `id` (UUID), `ideaId` (UUID), `roadmapItemId` (UUID?), `sourceType` (`CRM_OPPORTUNITY` \\| `SUPPORT_TICKET` \\| `CUSTOMER_CALL` \\| `PORTAL_SUBMISSION`), `verbatimQuote` (String), `urgency` (`CRITICAL_BLOCKER` \\| `HIGH` \\| `NICE_TO_HAVE`), `crmAccountId` (UUID?), `crmOpportunityId` (UUID?), `supTicketId` (UUID?), `attributedArrAmount` (`Decimal128`), `capturedAt` (DateTime), `version` (Integer) | Belongs to `DevProductIdea` (and optional `DevRoadmapItem`); refs canonical `CrmAccount`, `CrmOpportunity`, `SupTicket` | Validates foreign references on create; `attributedArrAmount` stored in `Decimal128` (`>= 0.00`). |\n| **`DevScoringModel`** | `id` (UUID), `name` (String), `methodology` (`RICE` \\| `WSJF` \\| `VALUE_EFFORT` \\| `CUSTOM_WEIGHTED`), `criteriaDefinitions` (JSON[] — `{ key, label, weightPercent: Decimal128, role: 'NUMERATOR'\\|'DENOMINATOR' }`), `isDefault` (Boolean), `version` (Integer) | Referenced by `DevRoadmapItem` | `CUSTOM_WEIGHTED` criteria weights must sum to `100.0000` (`Decimal128`); denominator (`Effort` / `Job Size`) enforces `> 0` guard against division by zero. |\n| **`DevRoadmapItem`** | `id` (UUID), `itemCode` (String, e.g., `RMP-112`), `title` (String), `publicPortalTitle` (String?), `themeId` (UUID), `scoringModelId` (UUID), `criterionInputs` (JSON), `priorityScore` (`Decimal128`), `effortEstimatePoints` (`Decimal128`), `influencedArrAmount` (`Decimal128`), `horizon` (`NOW` \\| `NEXT` \\| `LATER` \\| `ICEBOX` \\| `SHIPPED`), `targetQuarter` (String?), `commitmentStatus` (`PROPOSED` \\| `PENDING_APPROVAL` \\| `COMMITTED`), `dependsOnItemIds` (UUID[]), `linkedApmEpicId` (UUID?), `linkedApmIssueIds` (UUID[]), `deliveryProgressPercent` (`Decimal128`), `prdNotebookPageId` (UUID?), `linkedFlagId` (UUID?), `version` (Integer) | Belongs to `DevStrategicTheme` & `DevScoringModel`; refs canonical `ApmEpic`, `ApmIssue[]`, `#105` `DevFeatureFlag`, Platform Notebook page, Home `WorkItem` | Acyclic `dependsOnItemIds` graph; transitioning `horizon -> NOW` with `commitmentStatus = COMMITTED` requires approved Home `WorkItem` when portfolio governance is enabled; `deliveryProgressPercent` synced read-only from `ApmEpic` when linked. |\n| **`DevProductLaunch`** | `id` (UUID), `launchCode` (String), `name` (String), `tier` (`TIER_1_MAJOR` \\| `TIER_2_STANDARD` \\| `TIER_3_MINOR`), `roadmapItemIds` (UUID[]), `targetLaunchDate` (Date), `readinessChecks` (JSON — `{ apmComplete, qaGatePassed, flagReady, docsReady, mktReady }`), `releaseNotesMarkdown` (String), `status` (`PLANNING` \\| `READY_FOR_LAUNCH` \\| `PUBLISHED`), `publishedAt` (DateTime?), `version` (Integer) | Refs `DevRoadmapItem[]`, optional `mktCampaignId` (`MktCampaign`), `supArticleId` (`SupKnowledgeArticle`), `qaGateRunId` (`#106` `DevTestRun`) | Publishing (`status -> PUBLISHED`) seals published changelog revision (subsequent edits create versioned changelog updates) and transitions linked `DevRoadmapItem` & `DevProductIdea` records to `SHIPPED`. |\n| **`DevRoadmapPortal`** | `id` (UUID), `name` (String), `slug` (String), `audienceScope` (`INTERNAL_STAKEHOLDERS` \\| `DESIGN_PARTNERS` \\| `PUBLIC`), `includedThemeIds` (UUID[]), `allowIdeaSubmission` (Boolean), `votingPointBudgetPerUser` (Integer?), `requirePublishApproval` (Boolean), `isActive` (Boolean), `version` (Integer) | Governs filtered projection of `DevRoadmapItem`, `DevProductIdea`, and `DevProductLaunch` | `PUBLIC` and `DESIGN_PARTNERS` projections strip internal fields (`criterionInputs`, `influencedArrAmount`, `crmAccountId`, `linkedApmIssueIds`), exposing only `publicPortalTitle` / `publicSanitizedSummary`. |\n\n---\n\n## 5. Core End-to-End User Journeys\n\n1. **Discovery-to-Delivery (`DevProductIdea` -> RICE Score -> `ApmEpic` Sync):**\n   - Customer Success links 3 `SupTicket` escalations and 2 `CrmOpportunity` deals totaling \\$185,000.00 ARR (`Decimal128`) onto `IDEA-304: SSO SAML Group Mapping` (`#/idea-detail`).\n   - PM clicks **Promote to Roadmap Initiative**, scores `RMP-112` on `#/prioritization` (`Reach=500, Impact=3.0, Confidence=90%, Effort=5 -> priorityScore = 270.0000`), and clicks **Promote to Planning Epic**.\n   - `promoteToApmEpic` creates canonical `ApmEpic` `EPIC-77` in Rapider `planning`/`apm` and stores `linkedApmEpicId`. As engineers close child `ApmIssue` stories in `planning`, `apm.epic.progress_updated.v1` updates `RMP-112.deliveryProgressPercent` (`0% -> 40% -> 100%`) live on `#/roadmap`.\n2. **Executive Horizon Commitment via Shared Home `WorkItem`:**\n   - PM drags `RMP-112` into the `NOW` column on `<rapider-kanban>` (`#/roadmap`) and clicks **Request Commitment**.\n   - `requestHorizonCommitment` transitions `commitmentStatus -> PENDING_APPROVAL` and dispatches a Rapider Home `WorkItem` to the VP of Product displaying RICE score, \\$185,000.00 influenced ARR, `DevStrategicTheme` fit, and dependency checks. Approval marks `RMP-112` `COMMITTED`.\n3. **Coordinated Tier-1 Product Launch & Closed-Loop Changelog:**\n   - PM bundles `RMP-112` into `DevProductLaunch` `2026 Spring Enterprise Release` (`#/launches`), verifies `#106` QA Gate `PASSED`, `#105` flag `saml-group-sync`, `MktCampaign`, and `SupKnowledgeArticle` readiness, asks Rapider AI on `projectChannelMessage` to draft customer release notes (`PRM-027`), reviews/edits the Markdown, and clicks **Publish Launch**—updating `#/changelog` and notifying `IDEA-304` voters and `SupTicket` watchers.\n4. **Sanitized External Portal Projection:**\n   - Design Partner logs into portal `enterprise-cab` (`DESIGN_PARTNERS`), allocates 25 of their 100 CAB voting points to a `NEXT` card, and sees only `publicPortalTitle` and horizon—zero internal ARR figures or other customers' `CrmAccount` names are transmitted.\n5. **Search, Active Filter Tags, Click-Through & Back Restoration:**\n   - On `#/roadmap`, PM filters `Theme: Enterprise Security` + `Horizon: NOW` and types `\"SAML\"`. `#activeFilterTagsBar` displays dismissible chips and `Clear all`.\n   - Clicking `RMP-112` opens `#/roadmap-item-detail?id=...` cleanly; clicking `#btnGoBack` returns to `#/roadmap` with filter chips and `<rapider-kanban>` state intact.\n\n---\n\n## 6. Consolidated Feature Priorities & Work Packages\n\n### `P0` Foundation (MVP Release-Ready Core)\n- **WP-P0-1: Ideas, CRM/Support Evidence & Sanitized Portals (`PRM-001`–`PRM-003`, `PRM-014`):** `DevProductIdea`, `DevFeedbackEvidence`, `DevRoadmapPortal` schemas, deduplicated `Decimal128` ARR rollup from `CrmOpportunity`/`SupTicket`, `#activeFilterTagsBar`, `#/ideas`, `#/idea-detail`, `#/portals`.\n- **WP-P0-2: Strategic Themes & `Decimal128` RICE/Weighted Prioritization (`PRM-005`–`PRM-007`):** `DevStrategicTheme` & `DevScoringModel` engines, Value-vs-Effort 2x2 matrix, `#/dashboard`, `#/themes`, `#/prioritization`, `#/scoring-models`.\n- **WP-P0-3: Horizon `<rapider-kanban>`, `ApmEpic` Sync & Home `WorkItem` Commitments (`PRM-010`–`PRM-013`):** `DevRoadmapItem`, `roadmap-item-drawer`, `#/roadmap`, `#/roadmap-item-detail`, acyclic dependency validator, 1-click `ApmEpic`/`ApmIssue` promotion + progress listener, and Home `WorkItem` commitment workflow.\n- **WP-P0-4: Product Launches & Customer Changelogs (`PRM-015`, `PRM-016`):** `DevProductLaunch` GTM readiness tracker (`#/launches`) and Markdown release changelog (`#/changelog` + Notebook export).\n\n### `P1` Enterprise Portfolio & Cross-Suite GTM\n- **WP-P1-1: Priority Poker, Investment Mix & Scenario Snapshots (`PRM-008`, `PRM-009`, `PRM-019`):** Multi-rater calibration, `ApmResourceProfile`/`ApmProjectFinancialPlan` envelope comparison, and quarterly baseline snapshots.\n- **WP-P1-2: Closed-Loop Notifications, `#105`/`#097` Links, PRDs & Import/Export (`PRM-004`, `PRM-017`, `PRM-018`, `PRM-020`–`PRM-022`):** Voter/CRM/Support status notifications, `#105` flag rollout badges, `#097` adoption metric links, audience-specific date-free views, Notebook PRD linking, and CSV/Markdown import/export.\n\n### `P2` Adjacent Discovery & Grounded AI Copilot\n- **WP-P2-1: Competitive Signal Tags & CAB Point Budgets (`PRM-023`, `PRM-024`):** Competitive win/loss tagging on `DevFeedbackEvidence` and bounded voting point budgets on `DevRoadmapPortal`.\n- **WP-P2-2: Grounded AI Product Copilot (`PRM-025`–`PRM-028`):** Feedback theme clustering & merge suggestions, Notebook PRD drafter, release-note generator, and dependency risk advisor over `projectChannelMessage`.\n\n---\n\n## 7. Roles, Permissions & Field-Level Governance\n\n| Role | Permitted Actions | Restricted / Field-Level Boundaries |\n| :--- | :--- | :--- |\n| **Product Manager** | Create/edit `DevProductIdea`, `DevFeedbackEvidence`, `DevRoadmapItem`, `DevProductLaunch`; score items; promote to `ApmEpic`; request `COMMITTED` / `PUBLIC` approvals; invoke AI Copilot on `projectChannelMessage`. | Cannot self-approve `COMMITTED` horizon locks or `PUBLIC` portal publications when 4-eyes portfolio governance is enabled. |\n| **VP Product / Portfolio Lead** | All PM actions + configure `DevStrategicTheme` targets and `DevScoringModel` weights, approve/reject Home `WorkItem` horizon commitments & public portal launches, and lock quarterly baseline snapshots. | Audited on all commitment approvals and scoring model weight changes. |\n| **Engineering / QA Lead** | View full internal roadmap, dependencies, PRDs, and scores; link existing `ApmEpic` / `ApmIssue` / `#105` / `#106` records; participate in Priority Poker effort scoring. | Cannot publish external customer changelogs or alter `CrmOpportunity` ARR attributions. |\n| **Sales / Customer Success Contributor** | Submit `DevProductIdea` and attach `DevFeedbackEvidence` (`CrmAccount`, `CrmOpportunity`, `SupTicket`); view internal stakeholder roadmap and launch notes. | Cannot mutate RICE weights, move `COMMITTED` items across horizons, or delete roadmap initiatives. |\n| **External Portal Visitor / CAB Member** | View `PORTAL_VISIBLE` items (`publicPortalTitle`, `publicSanitizedSummary`, horizon) and cast votes within `votingPointBudgetPerUser`. | **Strict Field Isolation:** Zero access to `influencedArrAmount`, `criterionInputs`, `crmAccountId`, `supTicketId`, `linkedApmEpicId`, or internal threads. |\n\n---\n\n## 8. Technical APIs, Guarded Commands, Events & `requiredWorkflows`\n\n### Guarded Domain Commands\nAll state-changing commands enforce RBAC, `idempotencyKey`, `correlationId`, and `expectedVersion`:\n- `attachFeedbackEvidence(ideaId, sourceType, foreignRefId, verbatimQuote, urgency, idempotencyKey)` -> Validates `CrmAccount`/`CrmOpportunity`/`SupTicket` access and recalculates deduplicated `Decimal128` `influencedArrAmount`.\n- `mergeProductIdeas(targetIdeaId, sourceIdeaIds[], expectedVersion, idempotencyKey)` -> Re-parents evidence and unique votes without double-counting shared `CrmOpportunity` IDs.\n- `scoreRoadmapItem(roadmapItemId, criterionInputs, expectedVersion, idempotencyKey)` -> Computes exact `Decimal128` `priorityScore` using assigned `DevScoringModel` (rejecting zero/negative denominator).\n- `promoteToApmEpic(roadmapItemId, apmProjectId, epicPayload, expectedVersion, idempotencyKey)` -> Creates or links canonical `ApmEpic` in `planning`/`apm` and initializes bi-directional sync.\n- `requestHorizonCommitment(roadmapItemId, targetHorizon, justification, expectedVersion, idempotencyKey)` / `decideHorizonCommitment(...)` -> Manages governed Home `WorkItem` approval.\n- `publishProductLaunch(launchId, portalIds[], expectedVersion, idempotencyKey)` -> Validates readiness checks, publishes sanitized changelog, marks linked items `SHIPPED`, and emits closed-loop notifications.\n\n### Kafka Domain Events (Published & Consumed)\n- **Published:** `dev.roadmap.idea_promoted.v1`, `dev.roadmap.item_committed.v1`, `dev.roadmap.epic_promotion_requested.v1`, `dev.roadmap.launch_published.v1`, `dev.roadmap.idea_shipped.v1`.\n- **Consumed:** `apm.epic.progress_updated.v1` & `apm.issue.status_changed.v1` (updates `DevRoadmapItem.deliveryProgressPercent`), `crm.opportunity.amount_updated.v1` (refreshes `influencedArrAmount`), `dev.flag.toggled.v1` (`#105` rollout badge), `dev.test.quality_gate_passed.v1` (`#106` launch readiness).\n\n### `requiredWorkflows` in `app.manifest.json`\n1. `dev-roadmap-apm-delivery-sync-wf` (Synchronizes `ApmEpic` / `ApmIssue` completion percentages and status transitions onto `DevRoadmapItem` in `Decimal128`).\n2. `dev-roadmap-arr-rollup-wf` (Recomputes deduplicated `influencedArrAmount` across `DevProductIdea` and `DevRoadmapItem` when `DevFeedbackEvidence` or `CrmOpportunity` values change).\n3. `dev-roadmap-launch-and-notification-wf` (Coordinates Home `WorkItem` approvals for commitments/launches and sends closed-loop `SHIPPED` updates to `SupTicket` / `CRM` subscribers).\n4. `dev-roadmap-ai-discovery-copilot-wf` (Grounded AI feedback clustering, Notebook PRD drafter, and release-note generator on `projectChannelMessage`—never merging ideas, committing horizons, or publishing externally without human confirmation).\n\n---\n\n## 9. Security, Privacy, Compliance & Non-Functional Requirements\n\n- **External Portal Data Sanitization & Multi-Customer Confidentiality (STRICT):** Public and Design-Partner `DevRoadmapPortal` APIs enforce a server-side projection allowlist (`publicPortalTitle`, `publicSanitizedSummary`, `horizon`, `voteCount`), guaranteeing `0` leakage of private customer names (`CrmAccount`), deal sizes (e.g., \\$250,000.00 ARR), internal engineering blockers, or verbatim support transcripts.\n- **Markdown & XSS Sanitization:** Release notes (`releaseNotesMarkdown`) and feedback quotes are sanitized structurally before rich rendering and escaped (`escapeHtml()`) in filter chips and tables.\n- **GDPR / CCPA Voter & Contact Privacy:** External portal votes and `CrmContact` attributions honor workspace retention and right-to-erasure requests while preserving anonymized aggregate `voteCount`.\n- **Accessibility & Responsive Parity:** WCAG 2.2 AA compliant across `390px`, `768px`, and `1440px` (`light`/`dark` themes), including keyboard-accessible `<rapider-kanban>` horizon movement and scorecard inputs; `findSWR` initial renders `< 150ms` p95.\n\n---\n\n## 10. Deterministic Acceptance Criteria\n\n1. **Zero `projectId` & Zero `APM` Shadow Models:** Inspecting schemas confirms zero `projectId` fields, backend-generated UUIDs (`00000000-...` in fixtures), and zero duplicate `Sprint`/`Epic`/`Bug` tables—delivery execution links strictly to canonical `ApmEpic` and `ApmIssue`.\n2. **Exact `Decimal128` RICE Scoring & ARR Deduplication:** Scoring `(Reach=1000 * Impact=2.5 * Confidence=0.80) / Effort=4.0` yields exact `Decimal128` `priorityScore = 500.0000`; merging two ideas citing the same `CrmOpportunity` (\\$50,000.00) yields `influencedArrAmount = 50000.00` (never \\$100,000.00).\n3. **Bi-Directional `ApmEpic` Progress Sync:** Promoting `RMP-112` sets `linkedApmEpicId`; consuming `apm.epic.progress_updated.v1` (`completedIssues: 3, totalIssues: 4`) updates `deliveryProgressPercent` to `75.0000%` on `#/roadmap` and `#/roadmap-item-detail`.\n4. **Dependency Conflict Warning & Acyclic Graph:** Linking `Item A dependsOn Item B` where `Item A` is in `NOW` and `Item B` is in `LATER` surfaces a deterministic dependency-conflict warning; circular dependencies (`A -> B -> A`) are rejected on save.\n5. **External Portal Field Isolation:** Querying a `PUBLIC` `DevRoadmapPortal` endpoint returns sanitized titles/horizons and `0` occurrences of `influencedArrAmount`, `crmAccountId`, `supTicketId`, or `criterionInputs`.\n6. **Home `WorkItem` Commitment & Launch Governance:** Requesting `COMMITTED` status on a gated `NOW` initiative creates a shared Rapider Home `WorkItem`; self-approval is rejected when 4-eyes governance is active.\n7. **Sidebar Minimum 3 Items Rule:** All 3 visible sidebar sections (`Strategy & Roadmaps`, `Discovery & Prioritization`, `Launches & Portals`) each contain 3 visible items (`displayOnMenu: true`), while `roadmap-item-detail`, `idea-detail`, and `roadmap-item-drawer` set `displayOnMenu: false`.\n8. **SWR Clean Query & Optimistic Updates:** All pages load via `findSWR`/`countSWR` with zero `isDeleted` filter clauses; moving a horizon card on `<rapider-kanban>`, editing a RICE input, or deleting a draft idea updates in-memory state optimistically, clears SWR cache, and rolls back on error.\n9. **Table Actions, Contrast & Dialog Ban:** Zero tables show a \"View\" button in `Actions`; primary identifiers navigate to detail routes; `Edit` renders icon + text; `Delete` renders icon-only with `aria-label=\"Delete\"`; primary/danger buttons enforce `#ffffff` text; zero `alert`/`confirm`/`prompt` calls exist.\n10. **Active Filter Tags & Clear All:** Filtering `#/roadmap` or `#/ideas` renders `#activeFilterTagsBar` with HTML-escaped dismissible chips and `Clear all`, synchronously updating Table and `<rapider-kanban>` views.\n11. **Drawer Auto-Close & `finally` Reset:** Saving or cancelling `roadmap-item-drawer` closes the drawer, broadcasts `RECORD_CREATED`/`RECORD_UPDATED`, and restores the Save button state inside `finally`.\n12. **Click-Through Navigation & Back State Restoration:** Clicking `RMP-112` on `#/roadmap` navigates cleanly to `#/roadmap-item-detail?id=...` without `<base href>` 404 diversion, and `#btnGoBack` restores `#/roadmap` with active filter tags intact.\n13. **Grounded AI Safety:** AI clustering, Notebook PRD drafts, and changelog drafts post onto `projectChannelMessage` citing stored `DevFeedbackEvidence` IDs and never auto-merge ideas or auto-publish portals without human confirmation.\n14. **Theme & Responsive Validation:** Automated light/dark `validate_theme` and `390px`/`768px`/`1440px` layout checks pass with zero contrast or overflow defects.\n",
+  "thumbnailUrl": "",
+  "isolationScope": "ENTERPRISE_SHARED",
+  "dataModels": [
+    {
+      "name": "ApmEpic",
+      "title": "Epic",
+      "description": "A large body of work that can be broken down into smaller issues.",
+      "domainName": "Rapider Project & Portfolio Suite",
+      "domainKey": "APM",
+      "datatableName": "ApmEpic",
+      "dataTableName": "ApmEpic",
+      "sqlTableName": "apm_epic",
+      "isolationScope": "ENTERPRISE_SHARED",
+      "titleFieldTemplate": "{{ title }}",
+      "scope": {
+        "where": {}
+      },
+      "aiAgentConfig": {
+        "vectorSearchFields": [
+          "title",
+          "description"
+        ],
+        "planning": {
+          "availableOperations": [
+            "create",
+            "update",
+            "read",
+            "delete"
+          ]
+        },
+        "entityItemCreate": {
+          "requiredFields": [
+            "title",
+            "projectId"
+          ],
+          "immutableFields": [
+            "isDeleted"
+          ],
+          "requiredRelations": [],
+          "autoGenerateFields": [
+            "description"
+          ],
+          "additionalPrompt": "Ensure the epic title clearly states the overarching feature or goal.",
+          "requireUserConfirmation": false,
+          "customValidationPrompt": "An epic must belong to a valid project."
+        },
+        "entityItemUpdate": {
+          "immutableFields": [
+            "projectId"
+          ],
+          "autoGenerateFields": [],
+          "additionalPrompt": "When updating an epic's status to Done, suggest checking if all child issues are also Done.",
+          "requireUserConfirmation": true,
+          "customValidationPrompt": "",
+          "restrictedStates": [
+            {
+              "description": "Cannot modify completed epics.",
+              "where": {}
+            }
+          ]
+        },
+        "entityRead": {
+          "defaultPageSize": 15,
+          "defaultContextLimit": 10,
+          "hiddenFields": [],
+          "maskedFields": [],
+          "additionalPrompt": "Group epics by project when listing multiple."
+        },
+        "entityItemDelete": {
+          "requireCaptchaConfirmation": true,
+          "cascadingRelations": [
+            "issues"
+          ],
+          "restrictedStates": [
+            {
+              "description": "Cannot delete epics that have active issues.",
+              "where": {}
+            }
+          ]
+        }
+      },
+      "fields": [
+        {
+          "name": "id",
+          "type": "string",
+          "description": "Primary key UUID.",
+          "isPrimaryKey": true,
+          "isRequired": true,
+          "isHidden": false,
+          "isArray": false,
+          "defaultFn": "uuidv4"
+        },
+        {
+          "name": "projectId",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "title",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "description",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "status",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "isDeleted",
+          "type": "boolean",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false,
+          "default": false
+        }
+      ],
+      "relations": [
+        {
+          "name": "project",
+          "type": "belongsTo",
+          "sourceModel": "ApmEpic",
+          "sourceField": "projectId",
+          "targetModel": "ApmProject",
+          "targetField": "id",
+          "throughModel": null,
+          "description": "The project this epic belongs to."
+        },
+        {
+          "name": "issues",
+          "type": "hasMany",
+          "sourceModel": "ApmEpic",
+          "sourceField": "id",
+          "targetModel": "ApmIssue",
+          "targetField": "epicId",
+          "throughModel": null,
+          "description": "The issues that make up this epic."
+        }
+      ]
+    },
+    {
+      "name": "ApmIssue",
+      "title": "Issue",
+      "description": "An actionable item such as a bug, feature, or task.",
+      "domainName": "Rapider Project & Portfolio Suite",
+      "domainKey": "APM",
+      "datatableName": "ApmIssue",
+      "dataTableName": "ApmIssue",
+      "sqlTableName": "apm_issue",
+      "isolationScope": "ENTERPRISE_SHARED",
+      "titleFieldTemplate": "{{ title }} - {{ status }}",
+      "scope": {
+        "where": {}
+      },
+      "aiAgentConfig": {
+        "vectorSearchFields": [
+          "title",
+          "description"
+        ],
+        "planning": {
+          "availableOperations": [
+            "create",
+            "update",
+            "read",
+            "delete"
+          ]
+        },
+        "entityItemCreate": {
+          "requiredFields": [
+            "title",
+            "projectId",
+            "type"
+          ],
+          "immutableFields": [
+            "isDeleted"
+          ],
+          "requiredRelations": [],
+          "autoGenerateFields": [
+            "description",
+            "status"
+          ],
+          "additionalPrompt": "If the issue type is 'Bug', ensure a description is provided detailing the steps to reproduce.",
+          "requireUserConfirmation": true,
+          "customValidationPrompt": "Priority must be one of: Low, Medium, High, Critical."
+        },
+        "entityItemUpdate": {
+          "immutableFields": [
+            "projectId"
+          ],
+          "autoGenerateFields": [],
+          "additionalPrompt": "When updating status to 'Done', ensure all required fields are filled.",
+          "requireUserConfirmation": true,
+          "customValidationPrompt": "Cannot change type from Bug to Feature without user confirmation.",
+          "restrictedStates": [
+            {
+              "description": "Cannot modify closed issues.",
+              "where": {}
+            }
+          ]
+        },
+        "entityRead": {
+          "defaultPageSize": 25,
+          "defaultContextLimit": 15,
+          "hiddenFields": [],
+          "maskedFields": [],
+          "additionalPrompt": "Group issues by status and priority when summarizing."
+        },
+        "entityItemDelete": {
+          "requireCaptchaConfirmation": true,
+          "cascadingRelations": [],
+          "restrictedStates": [
+            {
+              "description": "Cannot delete issues that are currently In Progress.",
+              "where": {}
+            }
+          ]
+        }
+      },
+      "fields": [
+        {
+          "name": "id",
+          "type": "string",
+          "description": "Primary key UUID.",
+          "isPrimaryKey": true,
+          "isRequired": true,
+          "isHidden": false,
+          "isArray": false,
+          "defaultFn": "uuidv4"
+        },
+        {
+          "name": "projectId",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "epicId",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "sprintId",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "title",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "description",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "type",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "status",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "priority",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "storyPoints",
+          "type": "number",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "labelIds",
+          "type": "array",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": true
+        },
+        {
+          "name": "isDeleted",
+          "type": "boolean",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false,
+          "default": false
+        },
+        {
+          "name": "assigneeId",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "reporterId",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        }
+      ],
+      "relations": [
+        {
+          "name": "project",
+          "type": "belongsTo",
+          "sourceModel": "ApmIssue",
+          "sourceField": "projectId",
+          "targetModel": "ApmProject",
+          "targetField": "id",
+          "throughModel": null,
+          "description": "The project this issue belongs to."
+        },
+        {
+          "name": "epic",
+          "type": "belongsTo",
+          "sourceModel": "ApmIssue",
+          "sourceField": "epicId",
+          "targetModel": "ApmEpic",
+          "targetField": "id",
+          "throughModel": null,
+          "description": "The epic this issue belongs to."
+        },
+        {
+          "name": "sprint",
+          "type": "belongsTo",
+          "sourceModel": "ApmIssue",
+          "sourceField": "sprintId",
+          "targetModel": "ApmSprint",
+          "targetField": "id",
+          "throughModel": null,
+          "description": "The sprint this issue is assigned to."
+        },
+        {
+          "name": "labels",
+          "type": "referencesMany",
+          "sourceModel": "ApmIssue",
+          "sourceField": "labelIds",
+          "targetModel": "ApmLabel",
+          "targetField": "id",
+          "throughModel": null,
+          "description": "Labels categorized for this issue."
+        }
+      ]
+    },
+    {
+      "name": "ApmProject",
+      "title": "Project",
+      "description": "Represents a high-level initiative or body of work containing epics, sprints, and issues.",
+      "domainName": "Rapider Project & Portfolio Suite",
+      "domainKey": "APM",
+      "datatableName": "ApmProject",
+      "dataTableName": "ApmProject",
+      "sqlTableName": "apm_project",
+      "isolationScope": "ENTERPRISE_SHARED",
+      "titleFieldTemplate": "{{ name }}",
+      "scope": {
+        "where": {}
+      },
+      "aiAgentConfig": {
+        "vectorSearchFields": [
+          "name",
+          "description"
+        ],
+        "planning": {
+          "availableOperations": [
+            "create",
+            "update",
+            "read",
+            "delete"
+          ]
+        },
+        "entityItemCreate": {
+          "requiredFields": [
+            "name"
+          ],
+          "immutableFields": [
+            "isDeleted"
+          ],
+          "requiredRelations": [],
+          "autoGenerateFields": [
+            "description"
+          ],
+          "additionalPrompt": "When creating a project, ensure the name is concise and professional.",
+          "requireUserConfirmation": false,
+          "customValidationPrompt": "Project name must be unique."
+        },
+        "entityItemUpdate": {
+          "immutableFields": [],
+          "autoGenerateFields": [],
+          "additionalPrompt": "Do not change the project name unless explicitly requested.",
+          "requireUserConfirmation": true,
+          "customValidationPrompt": "Ensure status transitions make logical sense.",
+          "restrictedStates": [
+            {
+              "description": "Cannot modify archived projects.",
+              "where": {}
+            }
+          ]
+        },
+        "entityRead": {
+          "defaultPageSize": 20,
+          "defaultContextLimit": 10,
+          "hiddenFields": [],
+          "maskedFields": [],
+          "additionalPrompt": "Summarize project progress by counting related open vs closed issues if possible."
+        },
+        "entityItemDelete": {
+          "requireCaptchaConfirmation": true,
+          "cascadingRelations": [
+            "epics",
+            "sprints",
+            "issues"
+          ],
+          "restrictedStates": [
+            {
+              "description": "Cannot delete active projects.",
+              "where": {}
+            }
+          ]
+        }
+      },
+      "fields": [
+        {
+          "name": "id",
+          "type": "string",
+          "description": "Primary key UUID.",
+          "isPrimaryKey": true,
+          "isRequired": true,
+          "isHidden": false,
+          "isArray": false,
+          "defaultFn": "uuidv4"
+        },
+        {
+          "name": "name",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "description",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "status",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "isDeleted",
+          "type": "boolean",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false,
+          "default": false
+        }
+      ],
+      "relations": [
+        {
+          "name": "epics",
+          "type": "hasMany",
+          "sourceModel": "ApmProject",
+          "sourceField": "id",
+          "targetModel": "ApmEpic",
+          "targetField": "projectId",
+          "throughModel": null,
+          "description": "A project can have multiple epics."
+        },
+        {
+          "name": "sprints",
+          "type": "hasMany",
+          "sourceModel": "ApmProject",
+          "sourceField": "id",
+          "targetModel": "ApmSprint",
+          "targetField": "projectId",
+          "throughModel": null,
+          "description": "A project can have multiple sprints."
+        },
+        {
+          "name": "issues",
+          "type": "hasMany",
+          "sourceModel": "ApmProject",
+          "sourceField": "id",
+          "targetModel": "ApmIssue",
+          "targetField": "projectId",
+          "throughModel": null,
+          "description": "A project contains multiple issues."
+        }
+      ]
+    },
+    {
+      "name": "ApmProjectFinancialPlan",
+      "title": "Project Financial Plan",
+      "description": "Project budget baseline covering labor, non-labor, contingency, and revenue targets.",
+      "domainName": "Rapider Project & Portfolio Suite",
+      "domainKey": "APM",
+      "datatableName": "ApmProjectFinancialPlan",
+      "dataTableName": "ApmProjectFinancialPlan",
+      "sqlTableName": "apm_project_financial_plan",
+      "isolationScope": "ENTERPRISE_SHARED",
+      "titleFieldTemplate": "{{ id }}",
+      "scope": {
+        "where": {}
+      },
+      "aiAgentConfig": {
+        "vectorSearchFields": [
+          "id"
+        ],
+        "planning": {
+          "availableOperations": [
+            "create",
+            "update",
+            "read",
+            "delete"
+          ]
+        },
+        "entityItemCreate": {
+          "requiredFields": [
+            "id"
+          ],
+          "immutableFields": [
+            "isDeleted"
+          ],
+          "requiredRelations": [],
+          "autoGenerateFields": [
+            "id"
+          ],
+          "additionalPrompt": "When creating Project Financial Plan, ensure required attributes are populated.",
+          "requireUserConfirmation": false,
+          "customValidationPrompt": ""
+        },
+        "entityItemUpdate": {
+          "immutableFields": [
+            "id"
+          ],
+          "autoGenerateFields": [],
+          "additionalPrompt": "",
+          "requireUserConfirmation": false,
+          "customValidationPrompt": "",
+          "restrictedStates": []
+        },
+        "entityRead": {
+          "defaultPageSize": 20,
+          "defaultContextLimit": 30,
+          "hiddenFields": [
+            "isDeleted"
+          ],
+          "maskedFields": [],
+          "additionalPrompt": ""
+        },
+        "entityItemDelete": {
+          "requireCaptchaConfirmation": true,
+          "cascadingRelations": [],
+          "restrictedStates": []
+        }
+      },
+      "fields": [
+        {
+          "name": "id",
+          "type": "string",
+          "description": "Primary key UUID.",
+          "isPrimaryKey": true,
+          "isRequired": true,
+          "isHidden": false,
+          "isArray": false,
+          "defaultFn": "uuidv4"
+        },
+        {
+          "name": "agileProjectId",
+          "type": "string",
+          "description": "",
+          "isRequired": true,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "customerAccountId",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "contractRef",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "currency",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "budgetLabor",
+          "type": "number",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "budgetNonLabor",
+          "type": "number",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "contingency",
+          "type": "number",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "revenuePlan",
+          "type": "number",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "billingType",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "fiscalPeriod",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "state",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "version",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "status",
+          "type": "string",
+          "description": "Lifecycle or record status.",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "isDeleted",
+          "type": "boolean",
+          "description": "Soft deletion flag.",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false,
+          "default": false
+        }
+      ],
+      "relations": []
+    },
+    {
+      "name": "ApmProjectPortfolio",
+      "title": "Project Portfolio",
+      "description": "Portfolio hierarchy grouping strategic initiatives and project investments.",
+      "domainName": "Rapider Project & Portfolio Suite",
+      "domainKey": "APM",
+      "datatableName": "ApmProjectPortfolio",
+      "dataTableName": "ApmProjectPortfolio",
+      "sqlTableName": "apm_project_portfolio",
+      "isolationScope": "ENTERPRISE_SHARED",
+      "titleFieldTemplate": "{{ name }}",
+      "scope": {
+        "where": {}
+      },
+      "aiAgentConfig": {
+        "vectorSearchFields": [
+          "name",
+          "description"
+        ],
+        "planning": {
+          "availableOperations": [
+            "create",
+            "update",
+            "read",
+            "delete"
+          ]
+        },
+        "entityItemCreate": {
+          "requiredFields": [
+            "id"
+          ],
+          "immutableFields": [
+            "isDeleted"
+          ],
+          "requiredRelations": [],
+          "autoGenerateFields": [
+            "id"
+          ],
+          "additionalPrompt": "When creating Project Portfolio, ensure required attributes are populated.",
+          "requireUserConfirmation": false,
+          "customValidationPrompt": ""
+        },
+        "entityItemUpdate": {
+          "immutableFields": [
+            "id"
+          ],
+          "autoGenerateFields": [],
+          "additionalPrompt": "",
+          "requireUserConfirmation": false,
+          "customValidationPrompt": "",
+          "restrictedStates": []
+        },
+        "entityRead": {
+          "defaultPageSize": 20,
+          "defaultContextLimit": 30,
+          "hiddenFields": [
+            "isDeleted"
+          ],
+          "maskedFields": [],
+          "additionalPrompt": ""
+        },
+        "entityItemDelete": {
+          "requireCaptchaConfirmation": true,
+          "cascadingRelations": [],
+          "restrictedStates": []
+        }
+      },
+      "fields": [
+        {
+          "name": "id",
+          "type": "string",
+          "description": "Primary key UUID.",
+          "isPrimaryKey": true,
+          "isRequired": true,
+          "isHidden": false,
+          "isArray": false,
+          "defaultFn": "uuidv4"
+        },
+        {
+          "name": "name",
+          "type": "string",
+          "description": "",
+          "isRequired": true,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "description",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "ownerId",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "parentPortfolioId",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "status",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "businessUnitId",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "fiscalPeriod",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "visibility",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "isDeleted",
+          "type": "boolean",
+          "description": "Soft deletion flag.",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false,
+          "default": false
+        }
+      ],
+      "relations": []
+    },
+    {
+      "name": "ApmResourceProfile",
+      "title": "Resource Profile",
+      "description": "Capacity and billing attributes for a delivery team member or contractor.",
+      "domainName": "Rapider Project & Portfolio Suite",
+      "domainKey": "APM",
+      "datatableName": "ApmResourceProfile",
+      "dataTableName": "ApmResourceProfile",
+      "sqlTableName": "apm_resource_profile",
+      "isolationScope": "ENTERPRISE_SHARED",
+      "titleFieldTemplate": "{{ id }}",
+      "scope": {
+        "where": {}
+      },
+      "aiAgentConfig": {
+        "vectorSearchFields": [
+          "id"
+        ],
+        "planning": {
+          "availableOperations": [
+            "create",
+            "update",
+            "read",
+            "delete"
+          ]
+        },
+        "entityItemCreate": {
+          "requiredFields": [
+            "id"
+          ],
+          "immutableFields": [
+            "isDeleted"
+          ],
+          "requiredRelations": [],
+          "autoGenerateFields": [
+            "id"
+          ],
+          "additionalPrompt": "When creating Resource Profile, ensure required attributes are populated.",
+          "requireUserConfirmation": false,
+          "customValidationPrompt": ""
+        },
+        "entityItemUpdate": {
+          "immutableFields": [
+            "id"
+          ],
+          "autoGenerateFields": [],
+          "additionalPrompt": "",
+          "requireUserConfirmation": false,
+          "customValidationPrompt": "",
+          "restrictedStates": []
+        },
+        "entityRead": {
+          "defaultPageSize": 20,
+          "defaultContextLimit": 30,
+          "hiddenFields": [
+            "isDeleted"
+          ],
+          "maskedFields": [],
+          "additionalPrompt": ""
+        },
+        "entityItemDelete": {
+          "requireCaptchaConfirmation": true,
+          "cascadingRelations": [],
+          "restrictedStates": []
+        }
+      },
+      "fields": [
+        {
+          "name": "id",
+          "type": "string",
+          "description": "Primary key UUID.",
+          "isPrimaryKey": true,
+          "isRequired": true,
+          "isHidden": false,
+          "isArray": false,
+          "defaultFn": "uuidv4"
+        },
+        {
+          "name": "personId",
+          "type": "string",
+          "description": "",
+          "isRequired": true,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "employeeId",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "roleIds",
+          "type": "array",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": true
+        },
+        {
+          "name": "skillIds",
+          "type": "array",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": true
+        },
+        {
+          "name": "teamId",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "locationId",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "workCalendarId",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "defaultCapacity",
+          "type": "number",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "unit",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "costRateRef",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "billRateRef",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "status",
+          "type": "string",
+          "description": "Lifecycle or record status.",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "isDeleted",
+          "type": "boolean",
+          "description": "Soft deletion flag.",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false,
+          "default": false
+        }
+      ],
+      "relations": []
+    },
+    {
+      "name": "ApmSprint",
+      "title": "Sprint",
+      "description": "A time-boxed iteration for a team to complete a set amount of work.",
+      "domainName": "Rapider Project & Portfolio Suite",
+      "domainKey": "APM",
+      "datatableName": "ApmSprint",
+      "dataTableName": "ApmSprint",
+      "sqlTableName": "apm_sprint",
+      "isolationScope": "ENTERPRISE_SHARED",
+      "titleFieldTemplate": "{{ name }}",
+      "scope": {
+        "where": {}
+      },
+      "aiAgentConfig": {
+        "vectorSearchFields": [
+          "name",
+          "goal"
+        ],
+        "planning": {
+          "availableOperations": [
+            "create",
+            "update",
+            "read",
+            "delete"
+          ]
+        },
+        "entityItemCreate": {
+          "requiredFields": [
+            "name",
+            "projectId",
+            "startDate",
+            "endDate"
+          ],
+          "immutableFields": [
+            "isDeleted"
+          ],
+          "requiredRelations": [],
+          "autoGenerateFields": [
+            "goal"
+          ],
+          "additionalPrompt": "Ensure sprint dates do not overlap with existing active sprints in the same project.",
+          "requireUserConfirmation": true,
+          "customValidationPrompt": "End date must be after start date."
+        },
+        "entityItemUpdate": {
+          "immutableFields": [
+            "projectId"
+          ],
+          "autoGenerateFields": [],
+          "additionalPrompt": "If completing a sprint, ask the user what to do with incomplete issues.",
+          "requireUserConfirmation": true,
+          "customValidationPrompt": "End date must be after start date.",
+          "restrictedStates": [
+            {
+              "description": "Cannot modify completed sprints.",
+              "where": {}
+            }
+          ]
+        },
+        "entityRead": {
+          "defaultPageSize": 10,
+          "defaultContextLimit": 5,
+          "hiddenFields": [],
+          "maskedFields": [],
+          "additionalPrompt": "Highlight the sprint goal and days remaining when summarizing an active sprint."
+        },
+        "entityItemDelete": {
+          "requireCaptchaConfirmation": true,
+          "cascadingRelations": [],
+          "restrictedStates": [
+            {
+              "description": "Cannot delete active sprints.",
+              "where": {}
+            }
+          ]
+        }
+      },
+      "fields": [
+        {
+          "name": "id",
+          "type": "string",
+          "description": "Primary key UUID.",
+          "isPrimaryKey": true,
+          "isRequired": true,
+          "isHidden": false,
+          "isArray": false,
+          "defaultFn": "uuidv4"
+        },
+        {
+          "name": "projectId",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "name",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "goal",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "startDate",
+          "type": "date",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "endDate",
+          "type": "date",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "status",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "isDeleted",
+          "type": "boolean",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false,
+          "default": false
+        }
+      ],
+      "relations": [
+        {
+          "name": "project",
+          "type": "belongsTo",
+          "sourceModel": "ApmSprint",
+          "sourceField": "projectId",
+          "targetModel": "ApmProject",
+          "targetField": "id",
+          "throughModel": null,
+          "description": "The project this sprint belongs to."
+        },
+        {
+          "name": "issues",
+          "type": "hasMany",
+          "sourceModel": "ApmSprint",
+          "sourceField": "id",
+          "targetModel": "ApmIssue",
+          "targetField": "sprintId",
+          "throughModel": null,
+          "description": "The issues assigned to this sprint."
+        }
+      ]
+    },
+    {
+      "name": "ApmTimesheet",
+      "title": "Weekly Timesheet",
+      "description": "Period timesheet bundle grouping time entries for manager approval.",
+      "domainName": "Rapider Project & Portfolio Suite",
+      "domainKey": "APM",
+      "datatableName": "ApmTimesheet",
+      "dataTableName": "ApmTimesheet",
+      "sqlTableName": "apm_timesheet",
+      "isolationScope": "ENTERPRISE_SHARED",
+      "titleFieldTemplate": "{{ id }}",
+      "scope": {
+        "where": {}
+      },
+      "aiAgentConfig": {
+        "vectorSearchFields": [
+          "id"
+        ],
+        "planning": {
+          "availableOperations": [
+            "create",
+            "update",
+            "read",
+            "delete"
+          ]
+        },
+        "entityItemCreate": {
+          "requiredFields": [
+            "id"
+          ],
+          "immutableFields": [
+            "isDeleted"
+          ],
+          "requiredRelations": [],
+          "autoGenerateFields": [
+            "id"
+          ],
+          "additionalPrompt": "When creating Weekly Timesheet, ensure required attributes are populated.",
+          "requireUserConfirmation": false,
+          "customValidationPrompt": ""
+        },
+        "entityItemUpdate": {
+          "immutableFields": [
+            "id"
+          ],
+          "autoGenerateFields": [],
+          "additionalPrompt": "",
+          "requireUserConfirmation": false,
+          "customValidationPrompt": "",
+          "restrictedStates": []
+        },
+        "entityRead": {
+          "defaultPageSize": 20,
+          "defaultContextLimit": 30,
+          "hiddenFields": [
+            "isDeleted"
+          ],
+          "maskedFields": [],
+          "additionalPrompt": ""
+        },
+        "entityItemDelete": {
+          "requireCaptchaConfirmation": true,
+          "cascadingRelations": [],
+          "restrictedStates": []
+        }
+      },
+      "fields": [
+        {
+          "name": "id",
+          "type": "string",
+          "description": "Primary key UUID.",
+          "isPrimaryKey": true,
+          "isRequired": true,
+          "isHidden": false,
+          "isArray": false,
+          "defaultFn": "uuidv4"
+        },
+        {
+          "name": "personId",
+          "type": "string",
+          "description": "",
+          "isRequired": true,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "periodStart",
+          "type": "date",
+          "description": "",
+          "isRequired": true,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "periodEnd",
+          "type": "date",
+          "description": "",
+          "isRequired": true,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "state",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "submittedAt",
+          "type": "date",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "approvedAt",
+          "type": "date",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "approverIds",
+          "type": "array",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": true
+        },
+        {
+          "name": "lockedAt",
+          "type": "date",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "policyVersion",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "status",
+          "type": "string",
+          "description": "Lifecycle or record status.",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "isDeleted",
+          "type": "boolean",
+          "description": "Soft deletion flag.",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false,
+          "default": false
+        }
+      ],
+      "relations": []
+    },
+    {
+      "name": "CrmAccount",
+      "title": "Account",
+      "description": "Customer entity with credit limit, balance, and risk profile.",
+      "domainName": "Rapider CRM Suite",
+      "domainKey": "CRM",
+      "datatableName": "CrmAccount",
+      "dataTableName": "CrmAccount",
+      "sqlTableName": "crm_account",
+      "isolationScope": "ENTERPRISE_SHARED",
+      "titleFieldTemplate": "{{ code }} - {{ name }}",
+      "scope": {
+        "where": {}
+      },
+      "aiAgentConfig": {
+        "vectorSearchFields": [
+          "name",
+          "code"
+        ],
+        "planning": {
+          "availableOperations": [
+            "create",
+            "update",
+            "read",
+            "delete"
+          ]
+        },
+        "entityItemCreate": {
+          "requiredFields": [
+            "ledgerId",
+            "code",
+            "name",
+            "type"
+          ],
+          "immutableFields": [
+            "isDeleted"
+          ],
+          "requiredRelations": [],
+          "autoGenerateFields": [],
+          "additionalPrompt": "",
+          "requireUserConfirmation": false,
+          "customValidationPrompt": ""
+        },
+        "entityItemUpdate": {
+          "immutableFields": [
+            "ledgerId"
+          ],
+          "autoGenerateFields": [],
+          "additionalPrompt": "",
+          "requireUserConfirmation": false,
+          "customValidationPrompt": "",
+          "restrictedStates": []
+        },
+        "entityRead": {
+          "defaultPageSize": 50,
+          "defaultContextLimit": 20,
+          "hiddenFields": [],
+          "maskedFields": [],
+          "additionalPrompt": ""
+        },
+        "entityItemDelete": {
+          "requireCaptchaConfirmation": true,
+          "cascadingRelations": [],
+          "restrictedStates": []
+        }
+      },
+      "fields": [
+        {
+          "name": "id",
+          "type": "string",
+          "description": "Primary key UUID.",
+          "isPrimaryKey": true,
+          "isRequired": true,
+          "isHidden": false,
+          "isArray": false,
+          "defaultFn": "uuidv4"
+        },
+        {
+          "name": "name",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "email",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "phone",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "creditLimit",
+          "type": "number",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "currentBalance",
+          "type": "number",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "riskFlag",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "status",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "paymentTerms",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "accountOwner",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "taxId",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "isDeleted",
+          "type": "boolean",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false,
+          "default": false
+        },
+        {
+          "name": "createdAt",
+          "type": "date",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "updatedAt",
+          "type": "date",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "accountCode",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "accountType",
+          "type": "string",
+          "description": "Allowed values: PROSPECT, CUSTOMER, PARTNER, COMPETITOR, HOUSEHOLD",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false,
+          "enumValues": [
+            "PROSPECT",
+            "CUSTOMER",
+            "PARTNER",
+            "COMPETITOR",
+            "HOUSEHOLD"
+          ],
+          "options": [
+            "PROSPECT",
+            "CUSTOMER",
+            "PARTNER",
+            "COMPETITOR",
+            "HOUSEHOLD"
+          ]
+        },
+        {
+          "name": "customerTier",
+          "type": "string",
+          "description": "Allowed values: ENTERPRISE, MID_MARKET, SMB, VIP",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false,
+          "enumValues": [
+            "ENTERPRISE",
+            "MID_MARKET",
+            "SMB",
+            "VIP"
+          ],
+          "options": [
+            "ENTERPRISE",
+            "MID_MARKET",
+            "SMB",
+            "VIP"
+          ]
+        },
+        {
+          "name": "supportSlaTier",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "primaryDomain",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "parentAccountId",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false,
+          "referenceModel": "CrmAccount",
+          "referenceField": "id"
+        },
+        {
+          "name": "legalEntityId",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false,
+          "referenceModel": "FinLegalEntity",
+          "referenceField": "id"
+        },
+        {
+          "name": "industry",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "revenue",
+          "type": "number",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "website",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "ownerPersonId",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "description",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "type",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        }
+      ],
+      "relations": [
+        {
+          "name": "ledger",
+          "type": "belongsTo",
+          "sourceModel": "CrmAccount",
+          "sourceField": "ledgerId",
+          "targetModel": "FinLedger",
+          "targetField": "id",
+          "throughModel": null,
+          "description": "The ledger this account belongs to."
+        },
+        {
+          "name": "parentAccount",
+          "type": "belongsTo",
+          "sourceModel": "CrmAccount",
+          "sourceField": "parentAccountId",
+          "targetModel": "CrmAccount",
+          "targetField": "id",
+          "throughModel": null,
+          "description": "CrmAccount parentAccount foreign key link to CrmAccount."
+        },
+        {
+          "name": "ownerEmployee",
+          "type": "belongsTo",
+          "sourceModel": "CrmAccount",
+          "sourceField": "ownerEmployeeId",
+          "targetModel": "HrEmployee",
+          "targetField": "id",
+          "throughModel": null,
+          "description": "CrmAccount ownerEmployee foreign key link to HrEmployee."
+        },
+        {
+          "name": "territory",
+          "type": "belongsTo",
+          "sourceModel": "CrmAccount",
+          "sourceField": "territoryId",
+          "targetModel": "CrmTerritory",
+          "targetField": "id",
+          "throughModel": null,
+          "description": "CrmAccount territory foreign key link to CrmTerritory."
+        },
+        {
+          "name": "defaultBillingProfile",
+          "type": "belongsTo",
+          "sourceModel": "CrmAccount",
+          "sourceField": "defaultBillingProfileId",
+          "targetModel": "FinBillingProfile",
+          "targetField": "id",
+          "throughModel": null,
+          "description": "CrmAccount defaultBillingProfile foreign key link to FinBillingProfile."
+        }
+      ]
+    },
+    {
+      "name": "CrmContact",
+      "title": "Contact",
+      "description": "Represents an individual person, usually associated with an Account.",
+      "domainName": "Rapider CRM Suite",
+      "domainKey": "CRM",
+      "datatableName": "CrmContact",
+      "dataTableName": "CrmContact",
+      "sqlTableName": "crm_contact",
+      "isolationScope": "ENTERPRISE_SHARED",
+      "titleFieldTemplate": "{{ firstName }} {{ lastName }}",
+      "scope": {
+        "where": {}
+      },
+      "aiAgentConfig": {
+        "vectorSearchFields": [
+          "firstName",
+          "lastName",
+          "email",
+          "jobTitle"
+        ],
+        "planning": {
+          "availableOperations": [
+            "create",
+            "update",
+            "read",
+            "delete"
+          ]
+        },
+        "entityItemCreate": {
+          "requiredFields": [
+            "firstName",
+            "lastName",
+            "accountId"
+          ],
+          "immutableFields": [
+            "isDeleted"
+          ],
+          "requiredRelations": [],
+          "autoGenerateFields": [],
+          "additionalPrompt": "Always link a contact to an account if mentioned.",
+          "requireUserConfirmation": false,
+          "customValidationPrompt": "Email must be a valid format if provided."
+        },
+        "entityItemUpdate": {
+          "immutableFields": [],
+          "autoGenerateFields": [],
+          "additionalPrompt": "",
+          "requireUserConfirmation": false,
+          "customValidationPrompt": "",
+          "restrictedStates": []
+        },
+        "entityRead": {
+          "defaultPageSize": 20,
+          "defaultContextLimit": 15,
+          "hiddenFields": [],
+          "maskedFields": [
+            "phone"
+          ],
+          "additionalPrompt": ""
+        },
+        "entityItemDelete": {
+          "requireCaptchaConfirmation": true,
+          "cascadingRelations": [],
+          "restrictedStates": []
+        }
+      },
+      "fields": [
+        {
+          "name": "id",
+          "type": "string",
+          "description": "Primary key UUID.",
+          "isPrimaryKey": true,
+          "isRequired": true,
+          "isHidden": false,
+          "isArray": false,
+          "defaultFn": "uuidv4"
+        },
+        {
+          "name": "accountId",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "firstName",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "lastName",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "email",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "phone",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "title",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "fullName",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "phoneE164",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "jobSeniority",
+          "type": "string",
+          "description": "Allowed values: C_SUITE, VP, DIRECTOR, MANAGER, IC",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false,
+          "enumValues": [
+            "C_SUITE",
+            "VP",
+            "DIRECTOR",
+            "MANAGER",
+            "IC"
+          ],
+          "options": [
+            "C_SUITE",
+            "VP",
+            "DIRECTOR",
+            "MANAGER",
+            "IC"
+          ]
+        },
+        {
+          "name": "buyingRole",
+          "type": "string",
+          "description": "Allowed values: ECONOMIC_BUYER, CHAMPION, EVALUATOR, PROCUREMENT, END_USER",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false,
+          "enumValues": [
+            "ECONOMIC_BUYER",
+            "CHAMPION",
+            "EVALUATOR",
+            "PROCUREMENT",
+            "END_USER"
+          ],
+          "options": [
+            "ECONOMIC_BUYER",
+            "CHAMPION",
+            "EVALUATOR",
+            "PROCUREMENT",
+            "END_USER"
+          ]
+        },
+        {
+          "name": "portalUserId",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "preferredLanguage",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "timezone",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "marketingConsentStatus",
+          "type": "string",
+          "description": "Allowed values: OPTED_IN, OPTED_OUT, UNSET",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false,
+          "enumValues": [
+            "OPTED_IN",
+            "OPTED_OUT",
+            "UNSET"
+          ],
+          "options": [
+            "OPTED_IN",
+            "OPTED_OUT",
+            "UNSET"
+          ]
+        },
+        {
+          "name": "dncStatus",
+          "type": "boolean",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false,
+          "default": false
+        },
+        {
+          "name": "status",
+          "type": "string",
+          "description": "Allowed values: ACTIVE, INACTIVE, BOUNCED, SUPPRESSED",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false,
+          "enumValues": [
+            "ACTIVE",
+            "INACTIVE",
+            "BOUNCED",
+            "SUPPRESSED"
+          ],
+          "options": [
+            "ACTIVE",
+            "INACTIVE",
+            "BOUNCED",
+            "SUPPRESSED"
+          ]
+        },
+        {
+          "name": "name",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "company",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "isDeleted",
+          "type": "boolean",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false,
+          "default": false
+        }
+      ],
+      "relations": [
+        {
+          "name": "account",
+          "type": "belongsTo",
+          "sourceModel": "CrmContact",
+          "sourceField": "accountId",
+          "targetModel": "CrmAccount",
+          "targetField": "id",
+          "throughModel": null,
+          "description": "The account this contact is associated with."
+        },
+        {
+          "name": "opportunities",
+          "type": "hasMany",
+          "sourceModel": "CrmContact",
+          "sourceField": "id",
+          "targetModel": "CrmOpportunity",
+          "targetField": "primaryContactId",
+          "throughModel": null,
+          "description": "Opportunities where this contact is the primary stakeholder."
+        },
+        {
+          "name": "ownerEmployee",
+          "type": "belongsTo",
+          "sourceModel": "CrmContact",
+          "sourceField": "ownerEmployeeId",
+          "targetModel": "HrEmployee",
+          "targetField": "id",
+          "throughModel": null,
+          "description": "CrmContact ownerEmployee foreign key link to HrEmployee."
+        },
+        {
+          "name": "sourceCampaign",
+          "type": "belongsTo",
+          "sourceModel": "CrmContact",
+          "sourceField": "sourceCampaignId",
+          "targetModel": "MktCampaign",
+          "targetField": "id",
+          "throughModel": null,
+          "description": "CrmContact sourceCampaign foreign key link to MktCampaign."
+        }
+      ]
+    },
+    {
+      "name": "CrmOpportunity",
+      "title": "Opportunity",
+      "description": "Represents a potential sales deal.",
+      "domainName": "Rapider CRM Suite",
+      "domainKey": "CRM",
+      "datatableName": "CrmOpportunity",
+      "dataTableName": "CrmOpportunity",
+      "sqlTableName": "crm_opportunity",
+      "isolationScope": "ENTERPRISE_SHARED",
+      "titleFieldTemplate": "{{ name }} - {{ stage }}",
+      "scope": {
+        "where": {}
+      },
+      "aiAgentConfig": {
+        "vectorSearchFields": [
+          "name",
+          "stage"
+        ],
+        "planning": {
+          "availableOperations": [
+            "create",
+            "update",
+            "read",
+            "delete"
+          ]
+        },
+        "entityItemCreate": {
+          "requiredFields": [
+            "name",
+            "accountId",
+            "stage"
+          ],
+          "immutableFields": [
+            "isDeleted"
+          ],
+          "requiredRelations": [],
+          "autoGenerateFields": [],
+          "additionalPrompt": "Ensure the opportunity is linked to an account.",
+          "requireUserConfirmation": true,
+          "customValidationPrompt": "Amount must be greater than 0 if provided."
+        },
+        "entityItemUpdate": {
+          "immutableFields": [
+            "accountId"
+          ],
+          "autoGenerateFields": [],
+          "additionalPrompt": "",
+          "requireUserConfirmation": true,
+          "customValidationPrompt": "If the stage is changing to 'Closed Won', ensure the amount is greater than 0.",
+          "restrictedStates": [
+            {
+              "description": "Opportunities marked as Closed Won cannot have their amounts modified.",
+              "where": {}
+            }
+          ]
+        },
+        "entityRead": {
+          "defaultPageSize": 10,
+          "defaultContextLimit": 20,
+          "hiddenFields": [],
+          "maskedFields": [],
+          "additionalPrompt": "Highlight high-value opportunities."
+        },
+        "entityItemDelete": {
+          "requireCaptchaConfirmation": true,
+          "cascadingRelations": [],
+          "restrictedStates": [
+            {
+              "description": "Cannot delete closed opportunities.",
+              "where": {}
+            }
+          ]
+        }
+      },
+      "fields": [
+        {
+          "name": "id",
+          "type": "string",
+          "description": "Primary key UUID.",
+          "isPrimaryKey": true,
+          "isRequired": true,
+          "isHidden": false,
+          "isArray": false,
+          "defaultFn": "uuidv4"
+        },
+        {
+          "name": "accountId",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "primaryContactId",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "name",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "amount",
+          "type": "number",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "stage",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "closeDate",
+          "type": "date",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "probability",
+          "type": "number",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "status",
+          "type": "string",
+          "description": "Lifecycle or record status.",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "isDeleted",
+          "type": "boolean",
+          "description": "Soft deletion flag.",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false,
+          "default": false
+        }
+      ],
+      "relations": [
+        {
+          "name": "account",
+          "type": "belongsTo",
+          "sourceModel": "CrmOpportunity",
+          "sourceField": "accountId",
+          "targetModel": "CrmAccount",
+          "targetField": "id",
+          "throughModel": null,
+          "description": "The account this opportunity is associated with."
+        },
+        {
+          "name": "primaryContact",
+          "type": "belongsTo",
+          "sourceModel": "CrmOpportunity",
+          "sourceField": "primaryContactId",
+          "targetModel": "CrmContact",
+          "targetField": "id",
+          "throughModel": null,
+          "description": "The primary contact driving this deal."
+        },
+        {
+          "name": "quotes",
+          "type": "hasMany",
+          "sourceModel": "CrmOpportunity",
+          "sourceField": "id",
+          "targetModel": "CrmQuote",
+          "targetField": "opportunityId",
+          "throughModel": null,
+          "description": "Quotes generated for this opportunity."
+        },
+        {
+          "name": "orders",
+          "type": "hasMany",
+          "sourceModel": "CrmOpportunity",
+          "sourceField": "id",
+          "targetModel": "OpsCustomerOrder",
+          "targetField": "opportunityId",
+          "throughModel": null,
+          "description": "Orders generated upon winning the opportunity."
+        },
+        {
+          "name": "activities",
+          "type": "hasMany",
+          "sourceModel": "CrmOpportunity",
+          "sourceField": "id",
+          "targetModel": "CrmActivity",
+          "targetField": "opportunityId",
+          "throughModel": null,
+          "description": "Activities logged against this deal."
+        }
+      ]
+    },
+    {
+      "name": "DevFeatureFlag",
+      "title": "Feature Flag",
+      "description": "When `killSwitchEngaged == true`, evaluation deterministically returns `defaultOffValueJson` (`0ms` override) regardless of `rolloutPct`.",
+      "domainName": "Rapider Developer Suite",
+      "domainKey": "DEV",
+      "datatableName": "DevFeatureFlag",
+      "dataTableName": "DevFeatureFlag",
+      "sqlTableName": "dev_feature_flag",
+      "isolationScope": "ENTERPRISE_SHARED",
+      "titleFieldTemplate": "{{ name }}",
+      "scope": {
+        "where": {}
+      },
+      "aiAgentConfig": {
+        "vectorSearchFields": [
+          "name",
+          "description"
+        ],
+        "planning": {
+          "availableOperations": [
+            "create",
+            "update",
+            "read",
+            "delete"
+          ]
+        },
+        "entityItemCreate": {
+          "requiredFields": [
+            "id"
+          ],
+          "immutableFields": [
+            "isDeleted"
+          ],
+          "requiredRelations": [],
+          "autoGenerateFields": [
+            "id"
+          ],
+          "additionalPrompt": "When creating Feature Flag, ensure required attributes are populated.",
+          "requireUserConfirmation": false,
+          "customValidationPrompt": ""
+        },
+        "entityItemUpdate": {
+          "immutableFields": [
+            "id"
+          ],
+          "autoGenerateFields": [],
+          "additionalPrompt": "",
+          "requireUserConfirmation": false,
+          "customValidationPrompt": "",
+          "restrictedStates": []
+        },
+        "entityRead": {
+          "defaultPageSize": 20,
+          "defaultContextLimit": 30,
+          "hiddenFields": [
+            "isDeleted"
+          ],
+          "maskedFields": [],
+          "additionalPrompt": ""
+        },
+        "entityItemDelete": {
+          "requireCaptchaConfirmation": true,
+          "cascadingRelations": [],
+          "restrictedStates": []
+        }
+      },
+      "fields": [
+        {
+          "name": "id",
+          "type": "string",
+          "description": "Primary key UUID.",
+          "isPrimaryKey": true,
+          "isRequired": true,
+          "isHidden": false,
+          "isArray": false,
+          "defaultFn": "uuidv4"
+        },
+        {
+          "name": "flagKey",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "flagName",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "environment",
+          "type": "string",
+          "description": "Allowed values: STAGING, PRODUCTION",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false,
+          "enumValues": [
+            "STAGING",
+            "PRODUCTION"
+          ],
+          "options": [
+            "STAGING",
+            "PRODUCTION"
+          ]
+        },
+        {
+          "name": "valueType",
+          "type": "string",
+          "description": "Allowed values: BOOLEAN, JSON_CONFIG",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false,
+          "enumValues": [
+            "BOOLEAN",
+            "JSON_CONFIG"
+          ],
+          "options": [
+            "BOOLEAN",
+            "JSON_CONFIG"
+          ]
+        },
+        {
+          "name": "defaultOffValueJson",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "rolloutPct",
+          "type": "number",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "killSwitchEngaged",
+          "type": "boolean",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false,
+          "default": false
+        },
+        {
+          "name": "rolledOut100At",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "cleanupStatus",
+          "type": "string",
+          "description": "Allowed values: NONE, STALE_CLEANUP_DUE, CLEANUP_ISSUE_OPEN, RETIRED",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false,
+          "enumValues": [
+            "NONE",
+            "STALE_CLEANUP_DUE",
+            "CLEANUP_ISSUE_OPEN",
+            "RETIRED"
+          ],
+          "options": [
+            "NONE",
+            "STALE_CLEANUP_DUE",
+            "CLEANUP_ISSUE_OPEN",
+            "RETIRED"
+          ]
+        },
+        {
+          "name": "version",
+          "type": "number",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "key",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "name",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "description",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "category",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "status",
+          "type": "string",
+          "description": "Lifecycle or record status.",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "isDeleted",
+          "type": "boolean",
+          "description": "Soft deletion flag.",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false,
+          "default": false
+        }
+      ],
+      "relations": [
+        {
+          "name": "Optional experiment",
+          "type": "belongsTo",
+          "sourceModel": "DevFeatureFlag",
+          "sourceField": "Optional experimentId",
+          "targetModel": "MktExpExperiment",
+          "targetField": "id",
+          "throughModel": null,
+          "description": "DevFeatureFlag Optional experiment foreign key link to MktExpExperiment."
+        }
+      ]
+    },
+    {
+      "name": "DevQualityGate",
+      "title": "Quality Gate",
+      "description": "`minPassRateThreshold` stored as `Decimal128` (`0.0000`–`100.0000`); if `requireWaiverApproval = true`, only an approved Home `WorkItem` transitions a blocked run to `WAIVED`.",
+      "domainName": "Rapider Developer Suite",
+      "domainKey": "DEV",
+      "datatableName": "DevQualityGate",
+      "dataTableName": "DevQualityGate",
+      "sqlTableName": "dev_quality_gate",
+      "isolationScope": "ENTERPRISE_SHARED",
+      "titleFieldTemplate": "{{ name }}",
+      "scope": {
+        "where": {}
+      },
+      "aiAgentConfig": {
+        "vectorSearchFields": [
+          "name"
+        ],
+        "planning": {
+          "availableOperations": [
+            "create",
+            "update",
+            "read",
+            "delete"
+          ]
+        },
+        "entityItemCreate": {
+          "requiredFields": [
+            "id"
+          ],
+          "immutableFields": [
+            "isDeleted"
+          ],
+          "requiredRelations": [],
+          "autoGenerateFields": [
+            "id"
+          ],
+          "additionalPrompt": "When creating Quality Gate, ensure required attributes are populated.",
+          "requireUserConfirmation": false,
+          "customValidationPrompt": ""
+        },
+        "entityItemUpdate": {
+          "immutableFields": [
+            "id"
+          ],
+          "autoGenerateFields": [],
+          "additionalPrompt": "",
+          "requireUserConfirmation": false,
+          "customValidationPrompt": "",
+          "restrictedStates": []
+        },
+        "entityRead": {
+          "defaultPageSize": 20,
+          "defaultContextLimit": 30,
+          "hiddenFields": [
+            "isDeleted"
+          ],
+          "maskedFields": [],
+          "additionalPrompt": ""
+        },
+        "entityItemDelete": {
+          "requireCaptchaConfirmation": true,
+          "cascadingRelations": [],
+          "restrictedStates": []
+        }
+      },
+      "fields": [
+        {
+          "name": "id",
+          "type": "string",
+          "description": "Primary key UUID.",
+          "isPrimaryKey": true,
+          "isRequired": true,
+          "isHidden": false,
+          "isArray": false,
+          "defaultFn": "uuidv4"
+        },
+        {
+          "name": "name",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "minPassRateThreshold",
+          "type": "number",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "maxCriticalWcagCount",
+          "type": "number",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "requireVisualBaselineApproval",
+          "type": "boolean",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false,
+          "default": false
+        },
+        {
+          "name": "blockOnNewFlakyTests",
+          "type": "boolean",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false,
+          "default": false
+        },
+        {
+          "name": "requireWaiverApproval",
+          "type": "boolean",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false,
+          "default": false
+        },
+        {
+          "name": "isDefault",
+          "type": "boolean",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false,
+          "default": false
+        },
+        {
+          "name": "version",
+          "type": "number",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "isBuiltInCleanCode",
+          "type": "boolean",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false,
+          "default": false
+        },
+        {
+          "name": "minNewCoveragePercent",
+          "type": "number",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "maxNewDuplicationPercent",
+          "type": "number",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "maxNewBlockerCriticalCount",
+          "type": "number",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "minHotspotsReviewedPercent",
+          "type": "number",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "enforceAiCodeAssurance",
+          "type": "boolean",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false,
+          "default": false
+        },
+        {
+          "name": "status",
+          "type": "string",
+          "description": "Lifecycle or record status.",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "isDeleted",
+          "type": "boolean",
+          "description": "Soft deletion flag.",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false,
+          "default": false
+        }
+      ],
+      "relations": []
+    },
+    {
+      "name": "DevTestRun",
+      "title": "Test Run",
+      "description": "`SCHEDULED_CRON` \\",
+      "domainName": "Rapider Developer Suite",
+      "domainKey": "DEV",
+      "datatableName": "DevTestRun",
+      "dataTableName": "DevTestRun",
+      "sqlTableName": "dev_test_run",
+      "isolationScope": "ENTERPRISE_SHARED",
+      "titleFieldTemplate": "{{ id }}",
+      "scope": {
+        "where": {}
+      },
+      "aiAgentConfig": {
+        "vectorSearchFields": [
+          "id"
+        ],
+        "planning": {
+          "availableOperations": [
+            "create",
+            "update",
+            "read",
+            "delete"
+          ]
+        },
+        "entityItemCreate": {
+          "requiredFields": [
+            "id"
+          ],
+          "immutableFields": [
+            "isDeleted"
+          ],
+          "requiredRelations": [],
+          "autoGenerateFields": [
+            "id"
+          ],
+          "additionalPrompt": "When creating Test Run, ensure required attributes are populated.",
+          "requireUserConfirmation": false,
+          "customValidationPrompt": ""
+        },
+        "entityItemUpdate": {
+          "immutableFields": [
+            "id"
+          ],
+          "autoGenerateFields": [],
+          "additionalPrompt": "",
+          "requireUserConfirmation": false,
+          "customValidationPrompt": "",
+          "restrictedStates": []
+        },
+        "entityRead": {
+          "defaultPageSize": 20,
+          "defaultContextLimit": 30,
+          "hiddenFields": [
+            "isDeleted"
+          ],
+          "maskedFields": [],
+          "additionalPrompt": ""
+        },
+        "entityItemDelete": {
+          "requireCaptchaConfirmation": true,
+          "cascadingRelations": [],
+          "restrictedStates": []
+        }
+      },
+      "fields": [
+        {
+          "name": "id",
+          "type": "string",
+          "description": "Primary key UUID.",
+          "isPrimaryKey": true,
+          "isRequired": true,
+          "isHidden": false,
+          "isArray": false,
+          "defaultFn": "uuidv4"
+        },
+        {
+          "name": "runNumber",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "suiteId",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "matrixId",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "triggerSource",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "status",
+          "type": "string",
+          "description": "Lifecycle or record status.",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "isDeleted",
+          "type": "boolean",
+          "description": "Soft deletion flag.",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false,
+          "default": false
+        }
+      ],
+      "relations": []
+    },
+    {
+      "name": "HrGoal",
+      "title": "Performance Goal & OKR",
+      "description": "Individual or team objectives with measurable key results, target values, weights, and progress tracking.",
+      "domainName": "Rapider HR & Talent Suite",
+      "domainKey": "HR",
+      "datatableName": "HrGoal",
+      "dataTableName": "HrGoal",
+      "sqlTableName": "hr_goal",
+      "isolationScope": "ENTERPRISE_SHARED_WITH_CONFIDENTIAL_VAULTS",
+      "titleFieldTemplate": "{{ title || name || code || id }}",
+      "scope": {
+        "where": {}
+      },
+      "aiAgentConfig": {
+        "vectorSearchFields": [
+          "title",
+          "name",
+          "description"
+        ],
+        "planning": {
+          "availableOperations": [
+            "create",
+            "update",
+            "read",
+            "delete"
+          ]
+        },
+        "entityItemCreate": {
+          "requiredFields": [
+            "title"
+          ],
+          "immutableFields": [
+            "isDeleted"
+          ],
+          "requiredRelations": [],
+          "autoGenerateFields": []
+        },
+        "entityItemUpdate": {
+          "nonUpdatableFields": [
+            "id",
+            "createdAt"
+          ],
+          "immutableFields": [
+            "isDeleted"
+          ],
+          "requiredRelations": []
+        },
+        "entityItemDelete": {
+          "softDelete": true
+        },
+        "entityItemRead": {
+          "defaultSort": "createdAt DESC",
+          "maxLimit": 100
+        }
+      },
+      "fields": [
+        {
+          "name": "id",
+          "type": "string",
+          "description": "Primary key UUID.",
+          "isPrimaryKey": true,
+          "isRequired": true,
+          "isHidden": false,
+          "isArray": false,
+          "defaultFn": "uuidv4"
+        },
+        {
+          "name": "employeeId",
+          "type": "string",
+          "description": "",
+          "isRequired": true,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "title",
+          "type": "string",
+          "description": "",
+          "isRequired": true,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "metricName",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "targetValue",
+          "type": "number",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "currentValue",
+          "type": "number",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "weight",
+          "type": "number",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "dueDate",
+          "type": "date",
+          "description": "",
+          "isRequired": true,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "status",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "createdAt",
+          "type": "date",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "updatedAt",
+          "type": "date",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "isDeleted",
+          "type": "boolean",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false,
+          "default": false
+        }
+      ],
+      "relations": []
+    },
+    {
+      "name": "MktCampaign",
+      "title": "Marketing Campaign",
+      "description": "Central marketing campaign record for cross-channel planning, budgeting, and performance tracking.",
+      "domainName": "Rapider Marketing Suite",
+      "domainKey": "MKT",
+      "datatableName": "MktCampaign",
+      "dataTableName": "MktCampaign",
+      "sqlTableName": "mkt_campaign",
+      "isolationScope": "ENTERPRISE_SHARED",
+      "titleFieldTemplate": "{{ name }}",
+      "scope": {
+        "where": {}
+      },
+      "aiAgentConfig": {
+        "vectorSearchFields": [
+          "name",
+          "code",
+          "description"
+        ],
+        "planning": {
+          "availableOperations": [
+            "create",
+            "update",
+            "read",
+            "delete"
+          ]
+        },
+        "entityItemCreate": {
+          "requiredFields": [
+            "id"
+          ],
+          "immutableFields": [
+            "isDeleted"
+          ],
+          "requiredRelations": [],
+          "autoGenerateFields": [
+            "id"
+          ],
+          "additionalPrompt": "When creating Marketing Campaign, ensure required attributes are populated.",
+          "requireUserConfirmation": false,
+          "customValidationPrompt": ""
+        },
+        "entityItemUpdate": {
+          "immutableFields": [
+            "id"
+          ],
+          "autoGenerateFields": [],
+          "additionalPrompt": "",
+          "requireUserConfirmation": false,
+          "customValidationPrompt": "",
+          "restrictedStates": []
+        },
+        "entityRead": {
+          "defaultPageSize": 20,
+          "defaultContextLimit": 30,
+          "hiddenFields": [
+            "isDeleted"
+          ],
+          "maskedFields": [],
+          "additionalPrompt": ""
+        },
+        "entityItemDelete": {
+          "requireCaptchaConfirmation": true,
+          "cascadingRelations": [],
+          "restrictedStates": []
+        }
+      },
+      "fields": [
+        {
+          "name": "id",
+          "type": "string",
+          "description": "Primary key UUID.",
+          "isPrimaryKey": true,
+          "isRequired": true,
+          "isHidden": false,
+          "isArray": false,
+          "defaultFn": "uuidv4"
+        },
+        {
+          "name": "name",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "code",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "objective",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "type",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "status",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "description",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "ownerUserId",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "startAt",
+          "type": "date",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "endAt",
+          "type": "date",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "timezone",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "budgetAmount",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "currency",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "brandId",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "parentCampaignId",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "goalDefinition",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "attributionModelId",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "tags",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "isDeleted",
+          "type": "boolean",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false,
+          "default": false
+        },
+        {
+          "name": "startDate",
+          "type": "date",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "endDate",
+          "type": "date",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "budget",
+          "type": "number",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        }
+      ],
+      "relations": [
+        {
+          "name": "assetLinks",
+          "type": "hasMany",
+          "sourceModel": "MktCampaign",
+          "sourceField": "id",
+          "targetModel": "MktCampaignAssetLink",
+          "targetField": "campaignId",
+          "throughModel": null,
+          "description": "MktCampaign relation to MktCampaignAssetLink."
+        },
+        {
+          "name": "audiences",
+          "type": "hasMany",
+          "sourceModel": "MktCampaign",
+          "sourceField": "id",
+          "targetModel": "MktAudienceSnapshot",
+          "targetField": "campaignId",
+          "throughModel": null,
+          "description": "MktCampaign relation to MktAudienceSnapshot."
+        },
+        {
+          "name": "journeys",
+          "type": "hasMany",
+          "sourceModel": "MktCampaign",
+          "sourceField": "id",
+          "targetModel": "MktMarketingJourney",
+          "targetField": "campaignId",
+          "throughModel": null,
+          "description": "MktCampaign relation to MktMarketingJourney."
+        }
+      ]
+    },
+    {
+      "name": "SupKnowledgeArticle",
+      "title": "KnowledgeArticle",
+      "description": "An article in the self-service knowledge base.",
+      "domainName": "Rapider Customer Support Suite",
+      "domainKey": "SUP",
+      "datatableName": "SupKnowledgeArticle",
+      "dataTableName": "SupKnowledgeArticle",
+      "sqlTableName": "sup_knowledge_article",
+      "isolationScope": "ENTERPRISE_SHARED",
+      "titleFieldTemplate": "{{ title }}",
+      "scope": {
+        "where": {}
+      },
+      "aiAgentConfig": {
+        "vectorSearchFields": [
+          "title",
+          "content",
+          "category"
+        ],
+        "planning": {
+          "availableOperations": [
+            "create",
+            "update",
+            "read",
+            "delete"
+          ]
+        },
+        "entityItemCreate": {
+          "requiredFields": [
+            "title",
+            "content",
+            "authorId"
+          ],
+          "immutableFields": [
+            "isDeleted"
+          ],
+          "requiredRelations": [],
+          "autoGenerateFields": [
+            "category"
+          ],
+          "additionalPrompt": "Ensure the content is formatted in Markdown.",
+          "requireUserConfirmation": true,
+          "customValidationPrompt": "Title must be descriptive."
+        },
+        "entityItemUpdate": {
+          "immutableFields": [
+            "authorId"
+          ],
+          "autoGenerateFields": [],
+          "additionalPrompt": "If making significant changes, suggest updating the category as well.",
+          "requireUserConfirmation": true,
+          "customValidationPrompt": "Content cannot be empty.",
+          "restrictedStates": []
+        },
+        "entityRead": {
+          "defaultPageSize": 20,
+          "defaultContextLimit": 5,
+          "hiddenFields": [],
+          "maskedFields": [],
+          "additionalPrompt": "When searching, prioritize articles where isPublished is true."
+        },
+        "entityItemDelete": {
+          "requireCaptchaConfirmation": true,
+          "cascadingRelations": [],
+          "restrictedStates": [
+            {
+              "description": "Cannot delete an article that is currently published. Unpublish it first.",
+              "where": {}
+            }
+          ]
+        }
+      },
+      "fields": [
+        {
+          "name": "id",
+          "type": "string",
+          "description": "Primary key UUID.",
+          "isPrimaryKey": true,
+          "isRequired": true,
+          "isHidden": false,
+          "isArray": false,
+          "defaultFn": "uuidv4"
+        },
+        {
+          "name": "title",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "content",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "category",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "isPublished",
+          "type": "boolean",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false,
+          "default": false
+        },
+        {
+          "name": "authorId",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "isDeleted",
+          "type": "boolean",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false,
+          "default": false
+        },
+        {
+          "name": "status",
+          "type": "string",
+          "description": "Lifecycle or record status.",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        }
+      ],
+      "relations": [
+        {
+          "name": "author",
+          "type": "belongsTo",
+          "sourceModel": "SupKnowledgeArticle",
+          "sourceField": "authorId",
+          "targetModel": "SupAgent",
+          "targetField": "id",
+          "throughModel": null,
+          "description": "The agent who wrote the article."
+        }
+      ]
+    },
+    {
+      "name": "SupTicket",
+      "title": "Case",
+      "description": "Represents a customer support issue or ticket.",
+      "domainName": "Rapider Customer Support Suite",
+      "domainKey": "SUP",
+      "datatableName": "SupTicket",
+      "dataTableName": "SupTicket",
+      "sqlTableName": "sup_ticket",
+      "isolationScope": "ENTERPRISE_SHARED",
+      "titleFieldTemplate": "{{ subject }} - {{ status }}",
+      "scope": {
+        "where": {}
+      },
+      "aiAgentConfig": {
+        "vectorSearchFields": [
+          "subject",
+          "description"
+        ],
+        "planning": {
+          "availableOperations": [
+            "create",
+            "update",
+            "read",
+            "delete"
+          ]
+        },
+        "entityItemCreate": {
+          "requiredFields": [
+            "subject",
+            "accountId"
+          ],
+          "immutableFields": [
+            "isDeleted"
+          ],
+          "requiredRelations": [],
+          "autoGenerateFields": [
+            "status",
+            "priority"
+          ],
+          "additionalPrompt": "Set priority to High if words like 'urgent' or 'critical' are used.",
+          "requireUserConfirmation": false,
+          "customValidationPrompt": ""
+        },
+        "entityItemUpdate": {
+          "immutableFields": [
+            "accountId"
+          ],
+          "autoGenerateFields": [],
+          "additionalPrompt": "",
+          "requireUserConfirmation": false,
+          "customValidationPrompt": "",
+          "restrictedStates": [
+            {
+              "description": "Cannot modify closed cases.",
+              "where": {}
+            }
+          ]
+        },
+        "entityRead": {
+          "defaultPageSize": 20,
+          "defaultContextLimit": 30,
+          "hiddenFields": [],
+          "maskedFields": [],
+          "additionalPrompt": "Always list critical cases first."
+        },
+        "entityItemDelete": {
+          "requireCaptchaConfirmation": true,
+          "cascadingRelations": [],
+          "restrictedStates": [
+            {
+              "description": "Cannot delete resolved cases.",
+              "where": {}
+            }
+          ]
+        }
+      },
+      "fields": [
+        {
+          "name": "id",
+          "type": "string",
+          "description": "Primary key UUID.",
+          "isPrimaryKey": true,
+          "isRequired": true,
+          "isHidden": false,
+          "isArray": false,
+          "defaultFn": "uuidv4"
+        },
+        {
+          "name": "accountId",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "contactId",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "subject",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "description",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "status",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "priority",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "ticketNumber",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "channel",
+          "type": "string",
+          "description": "Allowed values: PORTAL, EMAIL, CHAT, VOICE, FIELD_SERVICE, SOCIAL, API",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false,
+          "enumValues": [
+            "PORTAL",
+            "EMAIL",
+            "CHAT",
+            "VOICE",
+            "FIELD_SERVICE",
+            "SOCIAL",
+            "API"
+          ],
+          "options": [
+            "PORTAL",
+            "EMAIL",
+            "CHAT",
+            "VOICE",
+            "FIELD_SERVICE",
+            "SOCIAL",
+            "API"
+          ]
+        },
+        {
+          "name": "queueId",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false,
+          "referenceModel": "SupQueue",
+          "referenceField": "id"
+        },
+        {
+          "name": "assetId",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false,
+          "referenceModel": "OpsOperationsAsset",
+          "referenceField": "id"
+        },
+        {
+          "name": "firstResponseDueAt",
+          "type": "datetime",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "resolutionDueAt",
+          "type": "datetime",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "csatScore",
+          "type": "number",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "assigneeId",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "slaPolicyId",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "isDeleted",
+          "type": "boolean",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false,
+          "default": false
+        }
+      ],
+      "relations": [
+        {
+          "name": "account",
+          "type": "belongsTo",
+          "sourceModel": "SupTicket",
+          "sourceField": "accountId",
+          "targetModel": "CrmAccount",
+          "targetField": "id",
+          "throughModel": null,
+          "description": "The account this case is associated with."
+        },
+        {
+          "name": "contact",
+          "type": "belongsTo",
+          "sourceModel": "SupTicket",
+          "sourceField": "contactId",
+          "targetModel": "CrmContact",
+          "targetField": "id",
+          "throughModel": null,
+          "description": "The individual contact associated with this case."
+        },
+        {
+          "name": "queue",
+          "type": "belongsTo",
+          "sourceModel": "SupTicket",
+          "sourceField": "queueId",
+          "targetModel": "SupQueue",
+          "targetField": "id",
+          "throughModel": null,
+          "description": "SupTicket queue foreign key link to SupQueue."
+        },
+        {
+          "name": "assigneeEmployee",
+          "type": "belongsTo",
+          "sourceModel": "SupTicket",
+          "sourceField": "assigneeEmployeeId",
+          "targetModel": "HrEmployee",
+          "targetField": "id",
+          "throughModel": null,
+          "description": "SupTicket assigneeEmployee foreign key link to HrEmployee."
+        },
+        {
+          "name": "slaPolicy",
+          "type": "belongsTo",
+          "sourceModel": "SupTicket",
+          "sourceField": "slaPolicyId",
+          "targetModel": "SupSlaPolicy",
+          "targetField": "id",
+          "throughModel": null,
+          "description": "SupTicket slaPolicy foreign key link to SupSlaPolicy."
+        },
+        {
+          "name": "asset",
+          "type": "belongsTo",
+          "sourceModel": "SupTicket",
+          "sourceField": "assetId",
+          "targetModel": "OpsOperationsAsset",
+          "targetField": "id",
+          "throughModel": null,
+          "description": "SupTicket asset foreign key link to OpsOperationsAsset."
+        }
+      ]
+    },
+    {
+      "name": "DevStrategicTheme",
+      "title": "Strategic Theme",
+      "description": "Optional `linkedHrGoalId` (`HrGoal`), `linkedPortfolioId` (`ApmProjectPortfolio`), `ownerUserId` (Platform Identity)",
+      "domainName": "Rapider Developer Suite",
+      "domainKey": "DEV",
+      "datatableName": "DevStrategicTheme",
+      "dataTableName": "DevStrategicTheme",
+      "sqlTableName": "dev_strategic_theme",
+      "isolationScope": "ENTERPRISE_SHARED",
+      "titleFieldTemplate": "{{ name }}",
+      "scope": {
+        "where": {}
+      },
+      "aiAgentConfig": {
+        "vectorSearchFields": [
+          "name",
+          "code",
+          "description"
+        ],
+        "planning": {
+          "availableOperations": [
+            "create",
+            "update",
+            "read",
+            "delete"
+          ]
+        },
+        "entityItemCreate": {
+          "requiredFields": [
+            "id"
+          ],
+          "immutableFields": [
+            "isDeleted"
+          ],
+          "requiredRelations": [],
+          "autoGenerateFields": [
+            "id"
+          ],
+          "additionalPrompt": "When creating Strategic Theme, ensure required attributes are populated.",
+          "requireUserConfirmation": false,
+          "customValidationPrompt": ""
+        },
+        "entityItemUpdate": {
+          "immutableFields": [
+            "id"
+          ],
+          "autoGenerateFields": [],
+          "additionalPrompt": "",
+          "requireUserConfirmation": false,
+          "customValidationPrompt": "",
+          "restrictedStates": []
+        },
+        "entityRead": {
+          "defaultPageSize": 20,
+          "defaultContextLimit": 30,
+          "hiddenFields": [
+            "isDeleted"
+          ],
+          "maskedFields": [],
+          "additionalPrompt": ""
+        },
+        "entityItemDelete": {
+          "requireCaptchaConfirmation": true,
+          "cascadingRelations": [],
+          "restrictedStates": []
+        }
+      },
+      "fields": [
+        {
+          "name": "id",
+          "type": "string",
+          "description": "Primary key UUID.",
+          "isPrimaryKey": true,
+          "isRequired": true,
+          "isHidden": false,
+          "isArray": false,
+          "defaultFn": "uuidv4"
+        },
+        {
+          "name": "code",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "name",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "description",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "colorHex",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "targetAllocationPercent",
+          "type": "number",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "fiscalPeriod",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "status",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "isDeleted",
+          "type": "boolean",
+          "description": "Soft deletion flag.",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false,
+          "default": false
+        }
+      ],
+      "relations": []
+    },
+    {
+      "name": "DevProductIdea",
+      "title": "Product Idea",
+      "description": "`UNDER_REVIEW` \\",
+      "domainName": "Rapider Developer Suite",
+      "domainKey": "DEV",
+      "datatableName": "DevProductIdea",
+      "dataTableName": "DevProductIdea",
+      "sqlTableName": "dev_product_idea",
+      "isolationScope": "ENTERPRISE_SHARED",
+      "titleFieldTemplate": "{{ title }}",
+      "scope": {
+        "where": {}
+      },
+      "aiAgentConfig": {
+        "vectorSearchFields": [
+          "title"
+        ],
+        "planning": {
+          "availableOperations": [
+            "create",
+            "update",
+            "read",
+            "delete"
+          ]
+        },
+        "entityItemCreate": {
+          "requiredFields": [
+            "id"
+          ],
+          "immutableFields": [
+            "isDeleted"
+          ],
+          "requiredRelations": [],
+          "autoGenerateFields": [
+            "id"
+          ],
+          "additionalPrompt": "When creating Product Idea, ensure required attributes are populated.",
+          "requireUserConfirmation": false,
+          "customValidationPrompt": ""
+        },
+        "entityItemUpdate": {
+          "immutableFields": [
+            "id"
+          ],
+          "autoGenerateFields": [],
+          "additionalPrompt": "",
+          "requireUserConfirmation": false,
+          "customValidationPrompt": "",
+          "restrictedStates": []
+        },
+        "entityRead": {
+          "defaultPageSize": 20,
+          "defaultContextLimit": 30,
+          "hiddenFields": [
+            "isDeleted"
+          ],
+          "maskedFields": [],
+          "additionalPrompt": ""
+        },
+        "entityItemDelete": {
+          "requireCaptchaConfirmation": true,
+          "cascadingRelations": [],
+          "restrictedStates": []
+        }
+      },
+      "fields": [
+        {
+          "name": "id",
+          "type": "string",
+          "description": "Primary key UUID.",
+          "isPrimaryKey": true,
+          "isRequired": true,
+          "isHidden": false,
+          "isArray": false,
+          "defaultFn": "uuidv4"
+        },
+        {
+          "name": "ideaCode",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "title",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "problemStatement",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "publicSanitizedSummary",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "portalVisibility",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "status",
+          "type": "string",
+          "description": "Lifecycle or record status.",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "isDeleted",
+          "type": "boolean",
+          "description": "Soft deletion flag.",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false,
+          "default": false
+        }
+      ],
+      "relations": []
+    },
+    {
+      "name": "DevFeedbackEvidence",
+      "title": "Feedback Evidence",
+      "description": "`CUSTOMER_CALL` \\",
+      "domainName": "Rapider Developer Suite",
+      "domainKey": "DEV",
+      "datatableName": "DevFeedbackEvidence",
+      "dataTableName": "DevFeedbackEvidence",
+      "sqlTableName": "dev_feedback_evidence",
+      "isolationScope": "ENTERPRISE_SHARED",
+      "titleFieldTemplate": "{{ id }}",
+      "scope": {
+        "where": {}
+      },
+      "aiAgentConfig": {
+        "vectorSearchFields": [
+          "id"
+        ],
+        "planning": {
+          "availableOperations": [
+            "create",
+            "update",
+            "read",
+            "delete"
+          ]
+        },
+        "entityItemCreate": {
+          "requiredFields": [
+            "id"
+          ],
+          "immutableFields": [
+            "isDeleted"
+          ],
+          "requiredRelations": [],
+          "autoGenerateFields": [
+            "id"
+          ],
+          "additionalPrompt": "When creating Feedback Evidence, ensure required attributes are populated.",
+          "requireUserConfirmation": false,
+          "customValidationPrompt": ""
+        },
+        "entityItemUpdate": {
+          "immutableFields": [
+            "id"
+          ],
+          "autoGenerateFields": [],
+          "additionalPrompt": "",
+          "requireUserConfirmation": false,
+          "customValidationPrompt": "",
+          "restrictedStates": []
+        },
+        "entityRead": {
+          "defaultPageSize": 20,
+          "defaultContextLimit": 30,
+          "hiddenFields": [
+            "isDeleted"
+          ],
+          "maskedFields": [],
+          "additionalPrompt": ""
+        },
+        "entityItemDelete": {
+          "requireCaptchaConfirmation": true,
+          "cascadingRelations": [],
+          "restrictedStates": []
+        }
+      },
+      "fields": [
+        {
+          "name": "id",
+          "type": "string",
+          "description": "Primary key UUID.",
+          "isPrimaryKey": true,
+          "isRequired": true,
+          "isHidden": false,
+          "isArray": false,
+          "defaultFn": "uuidv4"
+        },
+        {
+          "name": "ideaId",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "roadmapItemId",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "sourceType",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "status",
+          "type": "string",
+          "description": "Lifecycle or record status.",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "isDeleted",
+          "type": "boolean",
+          "description": "Soft deletion flag.",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false,
+          "default": false
+        }
+      ],
+      "relations": []
+    },
+    {
+      "name": "DevScoringModel",
+      "title": "Scoring Model",
+      "description": "`VALUE_EFFORT` \\",
+      "domainName": "Rapider Developer Suite",
+      "domainKey": "DEV",
+      "datatableName": "DevScoringModel",
+      "dataTableName": "DevScoringModel",
+      "sqlTableName": "dev_scoring_model",
+      "isolationScope": "ENTERPRISE_SHARED",
+      "titleFieldTemplate": "{{ name }}",
+      "scope": {
+        "where": {}
+      },
+      "aiAgentConfig": {
+        "vectorSearchFields": [
+          "name"
+        ],
+        "planning": {
+          "availableOperations": [
+            "create",
+            "update",
+            "read",
+            "delete"
+          ]
+        },
+        "entityItemCreate": {
+          "requiredFields": [
+            "id"
+          ],
+          "immutableFields": [
+            "isDeleted"
+          ],
+          "requiredRelations": [],
+          "autoGenerateFields": [
+            "id"
+          ],
+          "additionalPrompt": "When creating Scoring Model, ensure required attributes are populated.",
+          "requireUserConfirmation": false,
+          "customValidationPrompt": ""
+        },
+        "entityItemUpdate": {
+          "immutableFields": [
+            "id"
+          ],
+          "autoGenerateFields": [],
+          "additionalPrompt": "",
+          "requireUserConfirmation": false,
+          "customValidationPrompt": "",
+          "restrictedStates": []
+        },
+        "entityRead": {
+          "defaultPageSize": 20,
+          "defaultContextLimit": 30,
+          "hiddenFields": [
+            "isDeleted"
+          ],
+          "maskedFields": [],
+          "additionalPrompt": ""
+        },
+        "entityItemDelete": {
+          "requireCaptchaConfirmation": true,
+          "cascadingRelations": [],
+          "restrictedStates": []
+        }
+      },
+      "fields": [
+        {
+          "name": "id",
+          "type": "string",
+          "description": "Primary key UUID.",
+          "isPrimaryKey": true,
+          "isRequired": true,
+          "isHidden": false,
+          "isArray": false,
+          "defaultFn": "uuidv4"
+        },
+        {
+          "name": "name",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "methodology",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "status",
+          "type": "string",
+          "description": "Lifecycle or record status.",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "isDeleted",
+          "type": "boolean",
+          "description": "Soft deletion flag.",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false,
+          "default": false
+        }
+      ],
+      "relations": []
+    },
+    {
+      "name": "DevRoadmapItem",
+      "title": "Roadmap Item",
+      "description": "`LATER` \\",
+      "domainName": "Rapider Developer Suite",
+      "domainKey": "DEV",
+      "datatableName": "DevRoadmapItem",
+      "dataTableName": "DevRoadmapItem",
+      "sqlTableName": "dev_roadmap_item",
+      "isolationScope": "ENTERPRISE_SHARED",
+      "titleFieldTemplate": "{{ title }}",
+      "scope": {
+        "where": {}
+      },
+      "aiAgentConfig": {
+        "vectorSearchFields": [
+          "title"
+        ],
+        "planning": {
+          "availableOperations": [
+            "create",
+            "update",
+            "read",
+            "delete"
+          ]
+        },
+        "entityItemCreate": {
+          "requiredFields": [
+            "id"
+          ],
+          "immutableFields": [
+            "isDeleted"
+          ],
+          "requiredRelations": [],
+          "autoGenerateFields": [
+            "id"
+          ],
+          "additionalPrompt": "When creating Roadmap Item, ensure required attributes are populated.",
+          "requireUserConfirmation": false,
+          "customValidationPrompt": ""
+        },
+        "entityItemUpdate": {
+          "immutableFields": [
+            "id"
+          ],
+          "autoGenerateFields": [],
+          "additionalPrompt": "",
+          "requireUserConfirmation": false,
+          "customValidationPrompt": "",
+          "restrictedStates": []
+        },
+        "entityRead": {
+          "defaultPageSize": 20,
+          "defaultContextLimit": 30,
+          "hiddenFields": [
+            "isDeleted"
+          ],
+          "maskedFields": [],
+          "additionalPrompt": ""
+        },
+        "entityItemDelete": {
+          "requireCaptchaConfirmation": true,
+          "cascadingRelations": [],
+          "restrictedStates": []
+        }
+      },
+      "fields": [
+        {
+          "name": "id",
+          "type": "string",
+          "description": "Primary key UUID.",
+          "isPrimaryKey": true,
+          "isRequired": true,
+          "isHidden": false,
+          "isArray": false,
+          "defaultFn": "uuidv4"
+        },
+        {
+          "name": "itemCode",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "title",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "publicPortalTitle",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "themeId",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "scoringModelId",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "criterionInputs",
+          "type": "object",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "priorityScore",
+          "type": "number",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "effortEstimatePoints",
+          "type": "number",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "influencedArrAmount",
+          "type": "number",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "horizon",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "status",
+          "type": "string",
+          "description": "Lifecycle or record status.",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "isDeleted",
+          "type": "boolean",
+          "description": "Soft deletion flag.",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false,
+          "default": false
+        }
+      ],
+      "relations": []
+    },
+    {
+      "name": "DevProductLaunch",
+      "title": "Product Launch",
+      "description": "`TIER_3_MINOR`), `roadmapItemIds` (UUID[]), `targetLaunchDate` (Date), `readinessChecks` (JSON — `{ apmComplete, qaGatePassed, flagReady, docsReady, mktReady }`), `releaseNotesMarkdown` (String), `status` (`PLANNING` \\",
+      "domainName": "Rapider Developer Suite",
+      "domainKey": "DEV",
+      "datatableName": "DevProductLaunch",
+      "dataTableName": "DevProductLaunch",
+      "sqlTableName": "dev_product_launch",
+      "isolationScope": "ENTERPRISE_SHARED",
+      "titleFieldTemplate": "{{ name }}",
+      "scope": {
+        "where": {}
+      },
+      "aiAgentConfig": {
+        "vectorSearchFields": [
+          "name"
+        ],
+        "planning": {
+          "availableOperations": [
+            "create",
+            "update",
+            "read",
+            "delete"
+          ]
+        },
+        "entityItemCreate": {
+          "requiredFields": [
+            "id"
+          ],
+          "immutableFields": [
+            "isDeleted"
+          ],
+          "requiredRelations": [],
+          "autoGenerateFields": [
+            "id"
+          ],
+          "additionalPrompt": "When creating Product Launch, ensure required attributes are populated.",
+          "requireUserConfirmation": false,
+          "customValidationPrompt": ""
+        },
+        "entityItemUpdate": {
+          "immutableFields": [
+            "id"
+          ],
+          "autoGenerateFields": [],
+          "additionalPrompt": "",
+          "requireUserConfirmation": false,
+          "customValidationPrompt": "",
+          "restrictedStates": []
+        },
+        "entityRead": {
+          "defaultPageSize": 20,
+          "defaultContextLimit": 30,
+          "hiddenFields": [
+            "isDeleted"
+          ],
+          "maskedFields": [],
+          "additionalPrompt": ""
+        },
+        "entityItemDelete": {
+          "requireCaptchaConfirmation": true,
+          "cascadingRelations": [],
+          "restrictedStates": []
+        }
+      },
+      "fields": [
+        {
+          "name": "id",
+          "type": "string",
+          "description": "Primary key UUID.",
+          "isPrimaryKey": true,
+          "isRequired": true,
+          "isHidden": false,
+          "isArray": false,
+          "defaultFn": "uuidv4"
+        },
+        {
+          "name": "launchCode",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "name",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "tier",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "status",
+          "type": "string",
+          "description": "Lifecycle or record status.",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "isDeleted",
+          "type": "boolean",
+          "description": "Soft deletion flag.",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false,
+          "default": false
+        }
+      ],
+      "relations": []
+    },
+    {
+      "name": "DevRoadmapPortal",
+      "title": "Roadmap Portal",
+      "description": "`PUBLIC`), `includedThemeIds` (UUID[]), `allowIdeaSubmission` (Boolean), `votingPointBudgetPerUser` (Integer?), `requirePublishApproval` (Boolean), `isActive` (Boolean), `version` (Integer)",
+      "domainName": "Rapider Developer Suite",
+      "domainKey": "DEV",
+      "datatableName": "DevRoadmapPortal",
+      "dataTableName": "DevRoadmapPortal",
+      "sqlTableName": "dev_roadmap_portal",
+      "isolationScope": "ENTERPRISE_SHARED",
+      "titleFieldTemplate": "{{ name }}",
+      "scope": {
+        "where": {}
+      },
+      "aiAgentConfig": {
+        "vectorSearchFields": [
+          "name",
+          "slug"
+        ],
+        "planning": {
+          "availableOperations": [
+            "create",
+            "update",
+            "read",
+            "delete"
+          ]
+        },
+        "entityItemCreate": {
+          "requiredFields": [
+            "id"
+          ],
+          "immutableFields": [
+            "isDeleted"
+          ],
+          "requiredRelations": [],
+          "autoGenerateFields": [
+            "id"
+          ],
+          "additionalPrompt": "When creating Roadmap Portal, ensure required attributes are populated.",
+          "requireUserConfirmation": false,
+          "customValidationPrompt": ""
+        },
+        "entityItemUpdate": {
+          "immutableFields": [
+            "id"
+          ],
+          "autoGenerateFields": [],
+          "additionalPrompt": "",
+          "requireUserConfirmation": false,
+          "customValidationPrompt": "",
+          "restrictedStates": []
+        },
+        "entityRead": {
+          "defaultPageSize": 20,
+          "defaultContextLimit": 30,
+          "hiddenFields": [
+            "isDeleted"
+          ],
+          "maskedFields": [],
+          "additionalPrompt": ""
+        },
+        "entityItemDelete": {
+          "requireCaptchaConfirmation": true,
+          "cascadingRelations": [],
+          "restrictedStates": []
+        }
+      },
+      "fields": [
+        {
+          "name": "id",
+          "type": "string",
+          "description": "Primary key UUID.",
+          "isPrimaryKey": true,
+          "isRequired": true,
+          "isHidden": false,
+          "isArray": false,
+          "defaultFn": "uuidv4"
+        },
+        {
+          "name": "name",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "slug",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "audienceScope",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "status",
+          "type": "string",
+          "description": "Lifecycle or record status.",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "isDeleted",
+          "type": "boolean",
+          "description": "Soft deletion flag.",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false,
+          "default": false
+        }
+      ],
+      "relations": []
+    }
+  ],
+  "webPages": [
+    {
+      "name": "Product Strategy Overview",
+      "route": "dashboard",
+      "htmlFilePath": "pages/dashboard/dashboard.html",
+      "title": "Product Strategy Overview",
+      "group": "Strategy & Roadmaps",
+      "icon": "fas fa-home",
+      "displayInMenu": true,
+      "order": 1,
+      "developmentDetails": "KPI cards (countSWR/findSWR) for Committed NOW Items, Synced ApmEpic Completion %, Untriaged Ideas, Influenced ARR, and Upcoming Launches; theme allocation donut."
+    },
+    {
+      "name": "Now / Next / Later Roadmap",
+      "route": "roadmap",
+      "htmlFilePath": "pages/roadmap/roadmap.html",
+      "title": "Now / Next / Later Roadmap",
+      "group": "Strategy & Roadmaps",
+      "icon": "fas fa-code",
+      "displayInMenu": true,
+      "order": 2,
+      "developmentDetails": "<rapider-kanban> Horizon Board (NOW, NEXT, LATER, SHIPPED) + Quarterly Swimlane toggle; #activeFilterTagsBar with Clear all; live ApmEpic % & #105 flag badges; clickable title (roadmap-item-detail)."
+    },
+    {
+      "name": "Strategic Themes & Mix",
+      "route": "themes",
+      "htmlFilePath": "pages/themes/themes.html",
+      "title": "Strategic Themes & Mix",
+      "group": "Strategy & Roadmaps",
+      "icon": "fas fa-code",
+      "displayInMenu": true,
+      "order": 3,
+      "developmentDetails": "DevStrategicTheme list comparing target vs. actual Decimal128 investment mix %, linked HrGoal / ApmProjectPortfolio, and child roadmap count."
+    },
+    {
+      "name": "Customer Ideas & Evidence",
+      "route": "ideas",
+      "htmlFilePath": "pages/ideas/ideas.html",
+      "title": "Customer Ideas & Evidence",
+      "group": "Discovery & Prioritization",
+      "icon": "fas fa-code",
+      "displayInMenu": true,
+      "order": 4,
+      "developmentDetails": "Dual Table + <rapider-kanban> Idea Triage (NEW, UNDER_REVIEW, PLANNED, SHIPPED, DECLINED) showing vote count, Decimal128 influenced ARR, CrmAccount/SupTicket badges, and clickable idea title (idea-detail)."
+    },
+    {
+      "name": "RICE & Weighted Scorecards",
+      "route": "prioritization",
+      "htmlFilePath": "pages/prioritization/prioritization.html",
+      "title": "RICE & Weighted Scorecards",
+      "group": "Discovery & Prioritization",
+      "icon": "fas fa-code",
+      "displayInMenu": true,
+      "order": 5,
+      "developmentDetails": "Interactive Decimal128 scoring grid (Reach, Impact, Confidence, Effort -> priorityScore) + Value-vs-Effort 2x2 quadrant view and Promote to ApmEpic action."
+    },
+    {
+      "name": "Scoring Models & Criteria",
+      "route": "scoring-models",
+      "htmlFilePath": "pages/scoring-models/scoring-models.html",
+      "title": "Scoring Models & Criteria",
+      "group": "Discovery & Prioritization",
+      "icon": "fas fa-code",
+      "displayInMenu": true,
+      "order": 6,
+      "developmentDetails": "DevScoringModel governance table (RICE, WSJF, Custom Weighted) with criterion weight validation (sum == 100.00%), Edit (icon + text) and Delete (icon-only)."
+    },
+    {
+      "name": "Product Launches & GTM",
+      "route": "launches",
+      "htmlFilePath": "pages/launches/launches.html",
+      "title": "Product Launches & GTM",
+      "group": "Launches & Portals",
+      "icon": "fas fa-code",
+      "displayInMenu": true,
+      "order": 7,
+      "developmentDetails": "DevProductLaunch milestone tracker with cross-functional readiness pills (ApmEpic, #106 QA, #105 Flag, MktCampaign, SupKnowledgeArticle) and target launch dates."
+    },
+    {
+      "name": "Stakeholder & Customer Portals",
+      "route": "portals",
+      "htmlFilePath": "pages/portals/portals.html",
+      "title": "Stakeholder & Customer Portals",
+      "group": "Launches & Portals",
+      "icon": "fas fa-code",
+      "displayInMenu": true,
+      "order": 8,
+      "developmentDetails": "DevRoadmapPortal configuration (INTERNAL_STAKEHOLDERS, DESIGN_PARTNERS, PUBLIC), audience visibility filters, CAB voting point budgets, and safe external copy preview."
+    },
+    {
+      "name": "Published Release Notes",
+      "route": "changelog",
+      "htmlFilePath": "pages/changelog/changelog.html",
+      "title": "Published Release Notes",
+      "group": "Launches & Portals",
+      "icon": "fas fa-code",
+      "displayInMenu": true,
+      "order": 9,
+      "developmentDetails": "Chronological shipped changelog feed linking DevProductLaunch notes to fulfilled DevProductIdea items with Save-to-Notebook & portal publish controls."
+    },
+    {
+      "name": "Roadmap Initiative & Delivery Sync",
+      "route": "roadmap-item-detail",
+      "htmlFilePath": "pages/roadmap-item-detail/roadmap-item-detail.html",
+      "title": "Roadmap Initiative & Delivery Sync",
+      "group": "(Hidden)",
+      "icon": "fas fa-code",
+      "displayInMenu": false,
+      "order": 10,
+      "developmentDetails": "Decimal128 scorecard breakdown, linked ApmEpic & ApmIssue live delivery progress table, dependencies (BLOCKS/DEPENDS_ON), PRD Notebook link, DevFeedbackEvidence list, and AI Copilot (projectChannelMessage)."
+    },
+    {
+      "name": "Idea Evidence & ARR Rollup",
+      "route": "idea-detail",
+      "htmlFilePath": "pages/idea-detail/idea-detail.html",
+      "title": "Idea Evidence & ARR Rollup",
+      "group": "(Hidden)",
+      "icon": "fas fa-code",
+      "displayInMenu": false,
+      "order": 11,
+      "developmentDetails": "Customer feedback quotes, CrmOpportunity ARR & SupTicket links, duplicate merge selector, voter list, and Promote to Roadmap Initiative button."
+    },
+    {
+      "name": "Create / Edit Roadmap Item",
+      "route": "roadmap-item-drawer",
+      "htmlFilePath": "pages/roadmap-item-drawer/roadmap-item-drawer.html",
+      "title": "Create / Edit Roadmap Item",
+      "group": "(Hidden)",
+      "icon": "fas fa-code",
+      "displayInMenu": false,
+      "order": 12,
+      "developmentDetails": "Sliding form drawer for DevRoadmapItem creation/editing (theme, horizon, RICE inputs, sanitized portal summary, ApmEpic link); enforces try/catch/finally, SWR invalidation, and auto-close."
+    }
+  ],
+  "workflows": [],
+  "variables": [],
+  "tools": [],
+  "pages": [
+    {
+      "name": "Product Strategy Overview",
+      "route": "dashboard",
+      "htmlFilePath": "pages/dashboard/dashboard.html",
+      "title": "Product Strategy Overview",
+      "group": "Strategy & Roadmaps",
+      "icon": "fas fa-home",
+      "displayInMenu": true,
+      "order": 1,
+      "developmentDetails": "KPI cards (countSWR/findSWR) for Committed NOW Items, Synced ApmEpic Completion %, Untriaged Ideas, Influenced ARR, and Upcoming Launches; theme allocation donut."
+    },
+    {
+      "name": "Now / Next / Later Roadmap",
+      "route": "roadmap",
+      "htmlFilePath": "pages/roadmap/roadmap.html",
+      "title": "Now / Next / Later Roadmap",
+      "group": "Strategy & Roadmaps",
+      "icon": "fas fa-code",
+      "displayInMenu": true,
+      "order": 2,
+      "developmentDetails": "<rapider-kanban> Horizon Board (NOW, NEXT, LATER, SHIPPED) + Quarterly Swimlane toggle; #activeFilterTagsBar with Clear all; live ApmEpic % & #105 flag badges; clickable title (roadmap-item-detail)."
+    },
+    {
+      "name": "Strategic Themes & Mix",
+      "route": "themes",
+      "htmlFilePath": "pages/themes/themes.html",
+      "title": "Strategic Themes & Mix",
+      "group": "Strategy & Roadmaps",
+      "icon": "fas fa-code",
+      "displayInMenu": true,
+      "order": 3,
+      "developmentDetails": "DevStrategicTheme list comparing target vs. actual Decimal128 investment mix %, linked HrGoal / ApmProjectPortfolio, and child roadmap count."
+    },
+    {
+      "name": "Customer Ideas & Evidence",
+      "route": "ideas",
+      "htmlFilePath": "pages/ideas/ideas.html",
+      "title": "Customer Ideas & Evidence",
+      "group": "Discovery & Prioritization",
+      "icon": "fas fa-code",
+      "displayInMenu": true,
+      "order": 4,
+      "developmentDetails": "Dual Table + <rapider-kanban> Idea Triage (NEW, UNDER_REVIEW, PLANNED, SHIPPED, DECLINED) showing vote count, Decimal128 influenced ARR, CrmAccount/SupTicket badges, and clickable idea title (idea-detail)."
+    },
+    {
+      "name": "RICE & Weighted Scorecards",
+      "route": "prioritization",
+      "htmlFilePath": "pages/prioritization/prioritization.html",
+      "title": "RICE & Weighted Scorecards",
+      "group": "Discovery & Prioritization",
+      "icon": "fas fa-code",
+      "displayInMenu": true,
+      "order": 5,
+      "developmentDetails": "Interactive Decimal128 scoring grid (Reach, Impact, Confidence, Effort -> priorityScore) + Value-vs-Effort 2x2 quadrant view and Promote to ApmEpic action."
+    },
+    {
+      "name": "Scoring Models & Criteria",
+      "route": "scoring-models",
+      "htmlFilePath": "pages/scoring-models/scoring-models.html",
+      "title": "Scoring Models & Criteria",
+      "group": "Discovery & Prioritization",
+      "icon": "fas fa-code",
+      "displayInMenu": true,
+      "order": 6,
+      "developmentDetails": "DevScoringModel governance table (RICE, WSJF, Custom Weighted) with criterion weight validation (sum == 100.00%), Edit (icon + text) and Delete (icon-only)."
+    },
+    {
+      "name": "Product Launches & GTM",
+      "route": "launches",
+      "htmlFilePath": "pages/launches/launches.html",
+      "title": "Product Launches & GTM",
+      "group": "Launches & Portals",
+      "icon": "fas fa-code",
+      "displayInMenu": true,
+      "order": 7,
+      "developmentDetails": "DevProductLaunch milestone tracker with cross-functional readiness pills (ApmEpic, #106 QA, #105 Flag, MktCampaign, SupKnowledgeArticle) and target launch dates."
+    },
+    {
+      "name": "Stakeholder & Customer Portals",
+      "route": "portals",
+      "htmlFilePath": "pages/portals/portals.html",
+      "title": "Stakeholder & Customer Portals",
+      "group": "Launches & Portals",
+      "icon": "fas fa-code",
+      "displayInMenu": true,
+      "order": 8,
+      "developmentDetails": "DevRoadmapPortal configuration (INTERNAL_STAKEHOLDERS, DESIGN_PARTNERS, PUBLIC), audience visibility filters, CAB voting point budgets, and safe external copy preview."
+    },
+    {
+      "name": "Published Release Notes",
+      "route": "changelog",
+      "htmlFilePath": "pages/changelog/changelog.html",
+      "title": "Published Release Notes",
+      "group": "Launches & Portals",
+      "icon": "fas fa-code",
+      "displayInMenu": true,
+      "order": 9,
+      "developmentDetails": "Chronological shipped changelog feed linking DevProductLaunch notes to fulfilled DevProductIdea items with Save-to-Notebook & portal publish controls."
+    },
+    {
+      "name": "Roadmap Initiative & Delivery Sync",
+      "route": "roadmap-item-detail",
+      "htmlFilePath": "pages/roadmap-item-detail/roadmap-item-detail.html",
+      "title": "Roadmap Initiative & Delivery Sync",
+      "group": "(Hidden)",
+      "icon": "fas fa-code",
+      "displayInMenu": false,
+      "order": 10,
+      "developmentDetails": "Decimal128 scorecard breakdown, linked ApmEpic & ApmIssue live delivery progress table, dependencies (BLOCKS/DEPENDS_ON), PRD Notebook link, DevFeedbackEvidence list, and AI Copilot (projectChannelMessage)."
+    },
+    {
+      "name": "Idea Evidence & ARR Rollup",
+      "route": "idea-detail",
+      "htmlFilePath": "pages/idea-detail/idea-detail.html",
+      "title": "Idea Evidence & ARR Rollup",
+      "group": "(Hidden)",
+      "icon": "fas fa-code",
+      "displayInMenu": false,
+      "order": 11,
+      "developmentDetails": "Customer feedback quotes, CrmOpportunity ARR & SupTicket links, duplicate merge selector, voter list, and Promote to Roadmap Initiative button."
+    },
+    {
+      "name": "Create / Edit Roadmap Item",
+      "route": "roadmap-item-drawer",
+      "htmlFilePath": "pages/roadmap-item-drawer/roadmap-item-drawer.html",
+      "title": "Create / Edit Roadmap Item",
+      "group": "(Hidden)",
+      "icon": "fas fa-code",
+      "displayInMenu": false,
+      "order": 12,
+      "developmentDetails": "Sliding form drawer for DevRoadmapItem creation/editing (theme, horizon, RICE inputs, sanitized portal summary, ApmEpic link); enforces try/catch/finally, SWR invalidation, and auto-close."
+    }
+  ]
+}
